@@ -3,3 +3,22 @@
 /* style.css - stylesheet for Poly Entertainment
 
 /*=================================================*/
+
+* {margin: 0; box-sizing: border-box;}
+
+header {
+	width: 100%;
+}
+
+h1 {
+	float: left;
+}
+
+nav {
+	float: right;
+}
+
+.social {
+	display: none;
+	float: right;
+}
