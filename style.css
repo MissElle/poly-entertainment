@@ -14,8 +14,10 @@ h1 {
 	text-align: center;
 }
 
+.menu {width: 100%;}
+
 nav ul {
-	display: inline-flex;
+	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 }
@@ -27,7 +29,7 @@ nav ul {
 
 @media all and (max-width: 40em) {
 	.menu {
-		display: none;
+		display: flex;
 		width: 10em;
 		height: 99vh;
 		flex-flow: column nowrap;
@@ -37,7 +39,7 @@ nav ul {
 	nav ul {
 		flex-flow: column nowrap;
 	}
-	.social ul {display: inline-flex;}
+	.social ul {display: flex;}
 	
 	h1 {float: right;}
 }
