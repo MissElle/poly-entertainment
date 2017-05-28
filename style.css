@@ -17,7 +17,7 @@ h1 {
 .hamburger {width: 8em; display: none; z-index: 99;}
 img {width: 100%;}
 
-#toggle {display: bock;}
+#toggle {display: block;}
 .menu {width: 100%; float: left; background-color: aqua;}
 
 nav ul {
