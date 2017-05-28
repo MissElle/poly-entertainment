@@ -4,9 +4,9 @@
 
 //=================================================//
 
-$('#hamburger').on('click', showMenu)
-$('#hamburger').on('tap', showMenu)
-$('#menu').on('swipeleft', showMenu)
+$('#hamburger').on('click', showMenu);
+$('#hamburger').on('tap', showMenu);
+$('#toggle').on('swipeleft', showMenu);
 
 function showMenu (){
 	$('#toggle').toggle(170);
