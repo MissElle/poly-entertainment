@@ -4,8 +4,8 @@
 
 //=================================================//
 
-$('.hamburger').on('click', showMenu);
+$('#hamburger').on('click', showMenu)
 
-function showMenu{
-	$('#menu').toggle();
+function showMenu (){
+	$('#toggle').toggle(170);
 }
