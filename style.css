@@ -15,8 +15,10 @@ h1 {
 }
 
 .hamburger {width: 8em; display: none; z-index: 99;}
+img {width: 100%;}
 
-.menu {width: 100%; float: left;}
+#toggle {display: bock;}
+.menu {width: 100%; float: left; background-color: aqua;}
 
 nav ul {
 	display: flex;
@@ -35,18 +37,23 @@ nav ul {
 		flex-flow: row nowrap;
 		justify-content: flex-start;
 	}
-	.hamburger{display: flex; height: 10em;}
+	
+	#toggle {display: none;}
+	.hamburger{display: block; height: 10em;}
+
 	.menu {
-		display: none;
+		display: flex;
 		position: absolute;
 		top: 0em;
 		left: 0em;
+		padding-top: 10em;
 		width: 10em;
 		height: 99vh;
 		flex-flow: column nowrap;
 		justify-content: space-between;
 		align-items: flex-end;
 	}
+
 	nav ul {
 		flex-flow: column nowrap;
 	}
