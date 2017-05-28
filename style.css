@@ -14,7 +14,9 @@ h1 {
 	text-align: center;
 }
 
-.menu {width: 100%;}
+.hamburger {width: 8em; display: none; z-index: 99;}
+
+.menu {width: 100%; float: left;}
 
 nav ul {
 	display: flex;
@@ -28,8 +30,17 @@ nav ul {
 }
 
 @media all and (max-width: 40em) {
-	.menu {
+	header {
 		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+	}
+	.hamburger{display: flex; height: 10em;}
+	.menu {
+		display: none;
+		position: absolute;
+		top: 0em;
+		left: 0em;
 		width: 10em;
 		height: 99vh;
 		flex-flow: column nowrap;
