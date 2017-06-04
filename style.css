@@ -3,11 +3,13 @@
 /* style.css - stylesheet for Poly Entertainment
 
 /*=================================================*/
+/*Stylings for the header and menu*/
 
 * {margin: 0; box-sizing: border-box;}
 
 header {
 	width: 100%;
+	margin: 1em;
 }
 
 h1 {
@@ -60,4 +62,19 @@ nav ul {
 	.social ul {display: flex;}
 	
 	h1 {float: right;}
+}
+
+/*=================================================*/
+/*stylings for the main body and videos*/
+
+section {
+	background-color: rebeccapurple;
+	box-shadow: inset 0 0 1em #ffffff;
+	border: .1em #ffffff solid;
+	height: 10em;
+	padding: 1em;
+}
+
+section:nth-child(2){
+	background-color: #ffffff;
 }
