@@ -6,8 +6,12 @@
 
 $('#hamburger').on('click', showMenu);
 $('#hamburger').on('tap', showMenu);
-$('#toggle').on('swipeleft', showMenu);
+$('#toggle').on('swipeleft', hideMenu);
 
 function showMenu (){
-	$('#toggle').toggle(170);
+	$('#toggle').slideToggle(300);
+}
+
+function hideMenu (){
+	$('#toggle').hide(170);
 }
