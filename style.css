@@ -17,7 +17,7 @@ h1 {
 	text-align: center;
 }
 
-.hamburger {width: 8em; display: none; z-index: 99;}
+.hamburger {width: 4em; display: none; z-index: 99;}
 img {width: 100%;}
 
 #toggle {display: block;}
@@ -45,7 +45,7 @@ nav ul {
 	}
 	
 	#toggle {display: none;}
-	.hamburger{display: block; height: 10em;}
+	.hamburger{display: block; height: 4em;}
 
 	.menu {
 		display: flex;
@@ -74,7 +74,6 @@ nav ul {
 
 .scanlines {
 	position: absolute;
-	height: 89%;
 	width: 100%;
 	background-image: url(images/scanlines.png);
 	background-repeat: repeat;
