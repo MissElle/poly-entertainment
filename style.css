@@ -27,11 +27,14 @@ nav ul {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	list-style: none;
 }
 
 .social ul {
 	display: none;
 	flex-flow: column nowrap;
+	list-style: none;
+	font-size: 3em;
 }
 
 @media all and (max-width: 40em) {
