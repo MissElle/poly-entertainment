@@ -34,7 +34,7 @@ nav ul {
 	display: none;
 	flex-flow: column nowrap;
 	list-style: none;
-	font-size: 3em;
+	font-size: 2.2em;
 }
 
 @media all and (max-width: 40em) {
@@ -68,6 +68,7 @@ nav ul {
 	
 	h1 {float: right;}
 }
+
 /*=================================================*/
 /*stylings for the main body and videos*/
 
@@ -98,10 +99,6 @@ nav ul {
 	z-index: 100;
 }
 
-p {
-	padding: 1em;
-}
-
 .heart {
 	display: block;
 	float: right;
@@ -109,17 +106,27 @@ p {
 	z-index: 200;
 }
 
-/*font-family: 'Quicksand', sans-serif;
-font-family: 'Orbitron', sans-serif;
-font-family: 'Poiret One', cursive;
-font-family: 'Audiowide', cursive;
-font-family: 'Paytone One', sans-serif;
-font-family: 'Amaranth', sans-serif;
-font-family: 'Jura', sans-serif;
-font-family: 'Unica One', cursive;
-font-family: 'Montserrat Alternates', sans-serif;
-font-family: 'Electrolize', sans-serif;
-font-family: 'Gabriela', serif;
-font-family: 'Nova Mono', monospace;
-font-family: 'Text Me One', sans-serif;
-font-family: 'Nova Round', cursive;*/it 
+/*=================================================*/
+/*font spacing stylings*/
+
+h1, h2, h3, h4 {
+	font-family: 'Montserrat Alternates', sans-serif; 
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.4em;
+	font-family: 'Quicksand', sans-serif;
+	padding: 0 .5em;
+}
+
+p {
+	padding: 1em;
+	font-size: 1.4em;
+	font-family: 'Quicksand', sans-serif;
+}
+
+/*
+font-family: 'Quicksand', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/ 
