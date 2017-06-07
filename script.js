@@ -4,14 +4,15 @@
 
 //=================================================//
 
-$('#hamburger').on('click', showMenu);
-$('#hamburger').on('tap', showMenu);
-$('#toggle').on('swipeleft', hideMenu);
+$('#hamburger').on('click', menuDisplay);
+$(window).on('resize', showMenu);
 
-function showMenu (){
-	$('#toggle').slideToggle(300);
+function showMenu() {
+	if ($(window).width()>640){
+		$('#toggle').removeAttr('style');
+	}
 }
 
-function hideMenu (){
-	$('#toggle').hide(170);
+function menuDisplay() {
+	$('#toggle').slideToggle('slow');
 }
