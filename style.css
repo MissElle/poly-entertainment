@@ -106,6 +106,26 @@ nav ul {
 }
 
 /*=================================================*/
+/*stylings for images*/
+
+h1 {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+.name-inc {
+	height: 3em;
+	width: auto;
+	display: block;
+	padding: 0 .2em;
+}
+
+.logo {
+	width: 150%;
+}
+
+/*=================================================*/
 /*font spacing stylings*/
 
 h1, h2, h3, h4 {
