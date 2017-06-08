@@ -118,11 +118,12 @@ h1 {
 	height: 3em;
 	width: auto;
 	display: block;
-	padding: 0 .2em;
+	margin: 0 .2em;
 }
 
 .logo {
-	width: 150%;
+	width: 5em;
+	margin: .1em;
 }
 
 /*=================================================*/
