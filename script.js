@@ -30,7 +30,13 @@ function timeToLaunch() {
 	var countDownTime = setInterval(function() {
 		var now = new Date().getTime();
 		var distance = launchDate - now;
+		var msPerDay = 1000 * 60 * 60 * 24;
 		
-		$('#timer-clock').html(distance);
+		var days = Math.floor(distance / msPerDay);
+  	var hours = Math.floor((distance % msPerDay) / (1000 * 60 * 60));
+		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		
+		$('#timer-clock').html(days+'days<br>'+hours+':'+minutes+':'+seconds);
 	});
 }
