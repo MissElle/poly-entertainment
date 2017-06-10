@@ -196,6 +196,15 @@ h2 {
 @media all and (max-width:30em){
 	.launch {height: 84vw;}
 	#timer-clock {font-size: 11vw;}	
+	#welcome {top: 25vw;}
+}
+
+@media all and (max-width: 23.2em){
+	#welcome {
+		top: 20vw;
+		font-size: 4.3vw;
+	}
+	#timer{top: -36.7vw;}
 }
 
 @media all and (max-width:20em) {
