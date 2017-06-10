@@ -93,6 +93,7 @@ nav ul {
 	border: .1em #ffffff solid;
 	border-radius: .5em;
 	color: white;
+	text-align: justify;
 }
 
 .content:nth-child(2){
