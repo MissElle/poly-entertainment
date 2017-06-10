@@ -48,12 +48,12 @@ nav ul {
 		position: absolute;
 		top: 0em;
 		left: 0em;
-		padding-top: 10em;
-		width: 10em;
-		height: 99vh;
+		padding-top: 3.4em;
+		width: 8.3em;
+		height: 100vh;
 		background-color: #ffffff;
 		flex-flow: column nowrap;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: flex-end;
 		z-index: 9;
 	}
