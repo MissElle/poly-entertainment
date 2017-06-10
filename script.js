@@ -7,6 +7,7 @@
 $('#hamburger').on('click', menuDisplay);
 $(window).on('resize', showMenu);
 $(document).ready(divResize);
+$(window).on('resize', divResize);
 $(document).ready(timer);
 
 //=================================================//
@@ -58,9 +59,9 @@ function timer() {
 //This resizes the scanlines for to fit the body width
 
 function divResize() {
-	var y = $('article').height();
+	var articleHeight = $('#wrapper').height();
 	
-	$('#scanlines').height(y);
+	$('#scanlines').height(articleHeight);
 }
 
 //=================================================//
