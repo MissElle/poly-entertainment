@@ -71,7 +71,7 @@ nav ul {
 	nav ul {
 		flex-flow: column nowrap;
 	}
-	.social ul {display: flex;}
+	.social-menu ul {display: flex;}
 	
 }
 
