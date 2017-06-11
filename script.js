@@ -7,9 +7,8 @@
 $('#hamburger').on('click', menuDisplay);
 $('#float-box').on('click', menuDisplay);
 $(window).on('resize', screenSizeGrows);
-$(document).ready(divResize);
-$(window).on('resize', divResize);
-$(document).ready(initialStyle);
+$(window).on('resize', changeHTMLStyles);
+$(document).ready(changeHTMLStyles);
 $(document).ready(timer);
 
 //=================================================//
@@ -58,17 +57,10 @@ function timer() {
 }
 
 //=================================================//
-//This resizes the scanlines for to fit the body width
+//This changes HTML styles depending on markup and window size
 
-function divResize() {
-	var articleHeight = $('#wrapper').height();
-	
-	$('#scanlines').height(articleHeight);
-}
-
-//=================================================//
-
-function initialStyle() {
+function changeHTMLStyles() {
+	//This changes the icon styles depending on what color the footer tag is (.content even stylings)
 	$('.content').each(function(){
 		var bgColor = $(this).css('background-color');
 		if( bgColor === 'rgb(255, 255, 255)') {
@@ -82,6 +74,10 @@ function initialStyle() {
 	$('#menu .fa-instagram').css('color', '#ffffff');
 	$('#menu .fa-tumblr-square').css('color', '#36465d');
 	$('#menu .fa-twitter').css('color', '#1b95e0');
+
+	//This changes the scanlines height to always match the div #wrapper size
+	var articleHeight = $('#wrapper').height();
+	$('#scanlines').height(articleHeight);
 }
 
 //=================================================//
