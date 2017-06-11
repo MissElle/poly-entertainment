@@ -25,6 +25,27 @@ nav ul {
 	list-style: none;
 }
 
+.menu-links {
+	display: inline-block;
+	position: relative;
+	height: 2em;
+	width: 6em; 
+	margin: 0 .2em;
+	background-color: #ffffff;
+	transform: skew(20deg);
+	transition-property: top, box-shadow;
+	transition-duration: .5s;
+	transition-timing-function: linear;
+	-webkit-transition-property: top, box-shadow;
+	-webkit-transition-duration: .1s;
+	-webkit-transition-timing-function: linear;
+}
+
+.menu-links a {
+	display: block;
+	transform: skew(-20deg);
+}
+
 .social-menu ul {
 	display: none;
 	flex-flow: column nowrap;
@@ -44,14 +65,14 @@ nav ul {
 		display: none;
 		width: 100vw;
 		height: 100vh;
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		background-color: #051d42;
 		opacity: .5;
 		z-index: 2;
 	}
-	.hamburger{display: block; height: 4em;}
+	.hamburger{display: block; height: 5.3em; width: 5.3em; margin: 0 0 0 .5em; cursor: pointer;}
 
 	.menu {
 		display: flex;
@@ -64,20 +85,35 @@ nav ul {
 		flex-flow: column nowrap;
 		justify-content: space-around;
 		align-items: flex-end;
-		background-color: #fcfcfc;
+		background-color: #ffffff;
 		box-shadow: .1em .1em 2em #000000;
+		overflow: hidden;
 		z-index: 9;
 	}
 
-	nav ul {
-		flex-flow: column nowrap;
+	nav ul {flex-flow: column nowrap;}
+	nav li {
+		padding: .3em 0; 
+		margin: 2em 0;
+		background-color: #ffffff;
 	}
 	.social-menu ul {display: flex;}
 	
 }
 
 /*=================================================*/
+/* animation and general styles for links and icons*/
+
+.menu a {color: #461ca4;}
+
+.menu-links:hover {
+	top: -.35em;
+	box-shadow: .2em -.1em .2em #bcbcbc;
+}
+
+/*=================================================*/
 /*icons in the menu stylings*/
+/*other stylings for these icons are found in the javascript initialStyle function, since the alternating nth child properties cause some issues here*/
 
 #menu .fa-instagram {
 	background: radial-gradient(at 20% 120%, #ffe086, #d82f80, #3f6cdf);	
