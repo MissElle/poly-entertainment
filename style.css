@@ -41,6 +41,17 @@ nav ul {
 	}
 	
 	#toggle {display: none;}
+	#float-box {
+		display: none;
+		width: 100vw;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #051d42;
+		opacity: .5;
+		z-index: 2;
+	}
 	.hamburger{display: block; height: 4em;}
 
 	.menu {
