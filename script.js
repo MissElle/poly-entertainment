@@ -89,13 +89,13 @@ function menuDisplay() {
 	if (count%2 === 0) {
 		$('#menu').animate({
 			left: '-10em'
-		}, 130);
+		}, 50);
 		$('#float-box').fadeOut('fast');
 		$('html').css('overflow', 'visible');
 	}else {
 		$('#menu').animate({
 			left: '0px'
-		}, 130);
+		}, 50);
 		$('#float-box').fadeIn('fast');
 		$('html').css('overflow', 'hidden');
 	}
