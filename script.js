@@ -92,12 +92,14 @@ function menuDisplay() {
 		}, 50);
 		$('#float-box').fadeOut('fast');
 		$('html').css('overflow', 'visible');
+		$('#wrapper').css('pointer-events', 'auto');
 	}else {
 		$('#menu').animate({
 			left: '0px'
 		}, 50);
 		$('#float-box').fadeIn('fast');
 		$('html').css('overflow', 'hidden');
+		$('#wrapper').css('pointer-events', 'none');
 	}
 }
 
