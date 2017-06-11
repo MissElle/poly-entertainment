@@ -11,7 +11,6 @@ $(document).ready(divResize);
 $(window).on('resize', divResize);
 $(document).ready(timer);
 
-
 //=================================================//
 //This counter is to be used for the menu functions
 var count = 0;
