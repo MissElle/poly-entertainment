@@ -25,7 +25,7 @@ nav ul {
 	list-style: none;
 }
 
-.social ul {
+.social-menu ul {
 	display: none;
 	flex-flow: column nowrap;
 	list-style: none;
@@ -222,6 +222,7 @@ h2 {
 		font-size: 9vw;
 	}
 }
+
 /*=================================================*/
 /*animation Hello*/
 
@@ -232,6 +233,38 @@ h2 {
 	100% {opacity: 0;}
 }
 
+/*=================================================*/
+/*stylings for the footer contents*/
+
+footer p {text-align: left;}
+
+.social-footer {
+	float: right;
+}
+
+.social-footer ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	list-style: none;
+	font-size: 2.2em;
+}
+
+@media all and (max-width: 48.5em) {
+	.social-footer ul {
+		flex-flow: column wrap;
+	}
+	footer {
+		min-height: 15.5em;
+	}
+}
+
+@media all and (max-width: 29.1em){
+	.social-footer ul {
+		flex-flow: row nowrap;
+		padding-right: .5em;
+	}
+}
 /*=================================================*/
 /*font stylings*/
 
