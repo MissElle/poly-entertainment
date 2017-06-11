@@ -5,7 +5,7 @@
 //=================================================//
 
 $('#hamburger').on('click', menuDisplay);
-$(window).on('resize', showMenu);
+$(window).on('resize', screenSizeGrows);
 $(document).ready(divResize);
 $(window).on('resize', divResize);
 $(document).ready(timer);
@@ -74,7 +74,7 @@ function divResize() {
 //without it, the menu would stay hidden if the function
 //menuDisplay was activated and then the window was resized.
 
-function showMenu() {
+function screenSizeGrows() {
 	if ($(window).width()>640){
 		$('#toggle').removeAttr('style');
 		$('#float-box').removeAttr('style');
