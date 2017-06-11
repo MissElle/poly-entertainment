@@ -9,6 +9,7 @@ $('#float-box').on('click', menuDisplay);
 $(window).on('resize', screenSizeGrows);
 $(document).ready(divResize);
 $(window).on('resize', divResize);
+$(document).ready(initialStyle);
 $(document).ready(timer);
 
 //=================================================//
@@ -66,9 +67,20 @@ function divResize() {
 }
 
 //=================================================//
-//This function helps the menu redisplay during resizing
-//without it, the menu would stay hidden if the function
-//menuDisplay was activated and then the window was resized.
+
+function initialStyle() {
+	$('.content').each(function(){
+		var bgColor = $(this).css('background-color');
+		if( bgColor === 'rgb(255, 255, 255)') {
+			$('.fa').css('color', '#362166');
+		}else if(bgColor === 'rgb(54, 33, 102)')	{
+			$('.fa').css('color', '#ffffff');	
+		}
+	});
+}
+
+//=================================================//
+//This function helps the menu redisplay during resizing without it, the menu would stay hidden if the function menuDisplay was activated and then the window was resized.
 
 function screenSizeGrows() {
 	if ($(window).width()>640){
