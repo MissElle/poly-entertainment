@@ -106,7 +106,7 @@ nav ul {
 	text-align: justify;
 }
 
-.content:nth-child(2){
+.content:nth-child(even) {
 	background-color: #ffffff;
 	color: darkslategray;
 	z-index: 100;
