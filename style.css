@@ -105,10 +105,10 @@ nav ul {
 		left: 0em;
 		border-radius: 2em;
 		transition-property: left, font-size;
-		transition-duration: .13s;
+		transition-duration: .02s;
 		transition-timing-function: linear;
 		-webkit-transition-property: left, font-size;
-		-webkit-transition-duration: .13s;
+		-webkit-transition-duration: .02s;
 		-webkit-transition-timing-function: linear;
 	}
 }
@@ -122,8 +122,7 @@ nav ul {
 
 .menu-links:hover {
 	top: -.35em;
-	height: 2.25em;
-	box-shadow: 0em 0em .2em #bcbcbc;
+	box-shadow: .3em -.2em .2em #bcbcbc;
 }
 
 .social-menu li:hover{font-size: 1.3em; left: -.3em;}
@@ -324,10 +323,10 @@ footer p {text-align: left;}
 	left: 0em;
 	border-radius: 2em;
 	transition-property: left, font-size;
-	transition-duration: .13s;
+	transition-duration: .02s;
 	transition-timing-function: linear;
 	-webkit-transition-property: left, font-size;
-	-webkit-transition-duration: .13s;
+	-webkit-transition-duration: .02s;
 	-webkit-transition-timing-function: linear;
 }
 
