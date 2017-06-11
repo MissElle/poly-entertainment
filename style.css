@@ -30,10 +30,10 @@ nav ul {
 	position: relative;
 	height: 2em;
 	width: 6em; 
-	margin: 0 .2em;
+	margin: 0 .3em;
 	background-color: #ffffff;
 	transform: skew(20deg);
-	transition-property: top, box-shadow;
+	transition-property: height, box-shadow;
 	transition-duration: .5s;
 	transition-timing-function: linear;
 	-webkit-transition-property: top, box-shadow;
@@ -104,11 +104,14 @@ nav ul {
 /*=================================================*/
 /* animation and general styles for links and icons*/
 
-.menu a {color: #461ca4;}
+.menu-links a {color: #461ca4;}
+
+.menu-links a:active {color: #7fccff;}
 
 .menu-links:hover {
 	top: -.35em;
-	box-shadow: .2em -.1em .2em #bcbcbc;
+	height: 2.25em;
+	box-shadow: .3em -.2em .2em #bcbcbc;
 }
 
 /*=================================================*/
