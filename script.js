@@ -93,6 +93,9 @@ function screenSizeGrows() {
     $('html').css('overflow', 'visible');
 		$('#toggle').removeAttr('style');
 		$('#float-box').removeAttr('style');
+		$('#menu').animate({
+			left: '-10em'
+			}, 50);
 	}
 }
 
