@@ -76,6 +76,8 @@ function divResize() {
 
 function screenSizeGrows() {
 	if ($(window).width()>640){
+		count = 0;
+    $('html').css('overflow', 'visible');
 		$('#toggle').removeAttr('style');
 		$('#float-box').removeAttr('style');
 	}
