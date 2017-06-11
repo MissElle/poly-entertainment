@@ -34,10 +34,10 @@ nav ul {
 	background-color: #ffffff;
 	transform: skew(20deg);
 	transition-property: height, box-shadow;
-	transition-duration: .5s;
+	transition-duration: .13s;
 	transition-timing-function: linear;
-	-webkit-transition-property: top, box-shadow;
-	-webkit-transition-duration: .1s;
+	-webkit-transition-property: height, box-shadow;
+	-webkit-transition-duration: .13s;
 	-webkit-transition-timing-function: linear;
 }
 
@@ -98,7 +98,19 @@ nav ul {
 		background-color: #ffffff;
 	}
 	.social-menu ul {display: flex;}
-	
+	.social-menu li {
+		display: block;
+		background-color: transparent;
+		position: relative;
+		left: 0em;
+		border-radius: 2em;
+		transition-property: left, font-size;
+		transition-duration: .13s;
+		transition-timing-function: linear;
+		-webkit-transition-property: left, font-size;
+		-webkit-transition-duration: .13s;
+		-webkit-transition-timing-function: linear;
+	}
 }
 
 /*=================================================*/
@@ -111,7 +123,17 @@ nav ul {
 .menu-links:hover {
 	top: -.35em;
 	height: 2.25em;
-	box-shadow: .3em -.2em .2em #bcbcbc;
+	box-shadow: 0em 0em .2em #bcbcbc;
+}
+
+.social-menu li:hover{font-size: 1.3em; left: -.3em;}
+.social-menu li:active{font-size: 1.4em;}
+.social-footer li:hover{font-size: 1.3em;}
+.social-footer li:active{font-size: 1.4em;}
+
+@media all and (max-width: 48.5em){
+	.social-footer li:hover{font-size: 1.3em; left: -.1em;}
+	.social-footer li:active{font-size: 1.4em;}
 }
 
 /*=================================================*/
@@ -292,6 +314,21 @@ footer p {text-align: left;}
 
 .social-footer {
 	float: right;
+	max-height: 4em;
+}
+
+.social-footer li {
+	display: block;
+	background-color: transparent;
+	position: relative;
+	left: 0em;
+	border-radius: 2em;
+	transition-property: left, font-size;
+	transition-duration: .13s;
+	transition-timing-function: linear;
+	-webkit-transition-property: left, font-size;
+	-webkit-transition-duration: .13s;
+	-webkit-transition-timing-function: linear;
 }
 
 .social-footer ul {
@@ -303,15 +340,16 @@ footer p {text-align: left;}
 }
 
 @media all and (max-width: 48.5em) {
-	.social-footer ul {
-		flex-flow: column wrap;
+	.social-footer {	
+		max-width: 9em;
+		max-height: 15em;
 	}
-	footer {
-		min-height: 15.5em;
-	}
+	.social-footer ul {flex-flow: column wrap;}
+	footer {min-height: 15.5em;}
 }
 
 @media all and (max-width: 29.1em){
+	.social-footer {max-width: 100%;}
 	.social-footer ul {
 		flex-flow: row nowrap;
 		padding-right: .5em;
