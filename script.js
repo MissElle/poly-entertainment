@@ -5,6 +5,7 @@
 //=================================================//
 
 $('#hamburger').on('click', menuDisplay);
+$('#float-box').on('click', menuDisplay);
 $(window).on('resize', screenSizeGrows);
 $(document).ready(divResize);
 $(window).on('resize', divResize);
