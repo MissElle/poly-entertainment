@@ -62,10 +62,11 @@ nav ul {
 		padding-top: 3.4em;
 		width: 8.3em;
 		height: 100vh;
-		background-color: #ffffff;
 		flex-flow: column nowrap;
 		justify-content: space-around;
 		align-items: flex-end;
+		background-color: #ffffff;
+		box-shadow: .1em .1em 2em #000000;
 		z-index: 9;
 	}
 
