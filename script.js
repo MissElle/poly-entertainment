@@ -89,13 +89,14 @@ function screenSizeGrows() {
 function menuDisplay() {
 	++count
 	
-	$('#toggle').slideToggle('fast');
-	$('#float-box').fadeIn('fast');
-	$('html').css('overflow', 'hidden')
-	
 	if (count%2 === 0) {
+		$('#toggle').slideToggle('fast');
 		$('#float-box').fadeOut('fast');
 		$('html').css('overflow', 'visible');
+	}else {
+		$('#toggle').slideToggle('fast');
+		$('#float-box').fadeIn('fast');
+		$('html').css('overflow', 'hidden');
 	}
 }
 
