@@ -10,11 +10,16 @@ $(document).ready(divResize);
 $(window).on('resize', divResize);
 $(document).ready(timer);
 
+
+//=================================================//
+//This counter is to be used for the menu functions
+var count = 0;
+
 //=================================================//
 //This timer counts to the launch date
 
 function timer() {
-	var launchDate = new Date('2018-02-08 20:00:00 GMT-0700').getTime();
+	var launchDate = new Date('2018-02-08 20:00:00 GMT -0700').getTime();
 	var countDownTime = setInterval(function() {
 		var now = new Date().getTime();
 		var distance = launchDate - now;
@@ -72,6 +77,7 @@ function divResize() {
 function showMenu() {
 	if ($(window).width()>640){
 		$('#toggle').removeAttr('style');
+		$('#float-box').removeAttr('style');
 	}
 }
 
@@ -79,7 +85,16 @@ function showMenu() {
 //toggle for the menu
 
 function menuDisplay() {
-	$('#toggle').slideToggle('slow');
+	++count
+	
+	$('#toggle').slideToggle('fast');
+	$('#float-box').fadeIn('fast');
+	$('html').css('overflow', 'hidden')
+	
+	if (count%2 === 0) {
+		$('#float-box').fadeOut('fast');
+		$('html').css('overflow', 'visible');
+	}
 }
 
 
