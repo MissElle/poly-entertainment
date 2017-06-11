@@ -63,7 +63,7 @@ function changeHTMLStyles() {
 	//This changes the icon styles depending on what color the footer tag is (.content even stylings)
 	$('.content').each(function(){
 		var bgColor = $(this).css('background-color');
-		if( bgColor === 'rgb(255, 255, 255)') {
+		if( bgColor === 'rgb(252, 252, 252)') {
 			$('.fa').css('color', '#362166');
 		}else if(bgColor === 'rgb(54, 33, 102)')	{
 			$('.fa').css('color', '#ffffff');	
