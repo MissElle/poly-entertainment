@@ -58,10 +58,6 @@ function timer() {
 }
 
 //=================================================//
-
-
-
-//=================================================//
 //This resizes the scanlines for to fit the body width
 
 function divResize() {
@@ -91,11 +87,15 @@ function menuDisplay() {
 	++count
 	
 	if (count%2 === 0) {
-		$('#toggle').slideToggle('fast');
+		$('#menu').animate({
+			left: '-10em'
+		}, 130);
 		$('#float-box').fadeOut('fast');
 		$('html').css('overflow', 'visible');
 	}else {
-		$('#toggle').slideToggle('fast');
+		$('#menu').animate({
+			left: '0px'
+		}, 130);
 		$('#float-box').fadeIn('fast');
 		$('html').css('overflow', 'hidden');
 	}
