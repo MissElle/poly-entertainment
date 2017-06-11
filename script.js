@@ -77,6 +77,17 @@ function initialStyle() {
 			$('.fa').css('color', '#ffffff');	
 		}
 	});
+	
+	$('#menu .fa-github').css('color', '#1e1e1e');
+	$('#menu .fa-instagram').css({
+		'background': 'radial-gradient(at 20% 120%, #ffe086, #d82f80, #3f6cdf)',	
+		'background': '-webkit-radial-gradient(20% 120%, #ffe086, #d82f80, #3f6cdf)',
+		'color': '#ffffff',
+		'border-radius': '.27em',
+		'width': '.99em'
+	});
+	$('#menu .fa-tumblr-square').css('color', '#36465d');
+	$('#menu .fa-twitter').css('color', '#1b95e0');
 }
 
 //=================================================//

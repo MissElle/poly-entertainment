@@ -30,6 +30,7 @@ nav ul {
 	flex-flow: column nowrap;
 	list-style: none;
 	font-size: 2.2em;
+	text-align: center;
 }
 
 @media all and (max-width: 40em) {
@@ -63,7 +64,7 @@ nav ul {
 		flex-flow: column nowrap;
 		justify-content: space-around;
 		align-items: flex-end;
-		background-color: #ffffff;
+		background-color: #fcfcfc;
 		box-shadow: .1em .1em 2em #000000;
 		z-index: 9;
 	}
@@ -73,6 +74,18 @@ nav ul {
 	}
 	.social-menu ul {display: flex;}
 	
+}
+
+/*=================================================*/
+/*icons in the menu stylings*/
+
+#menu .fa-instagram {
+	background: radial-gradient(at 20% 120%, #ffe086, #d82f80, #3f6cdf);	
+	background: -webkit-radial-gradient(20% 120%, 	#ffe086, #d82f80, #3f6cdf);
+	color: #ffffff;
+	border-radius: .27em;
+	width: .99em;
+	text-align: center;
 }
 
 /*=================================================*/
