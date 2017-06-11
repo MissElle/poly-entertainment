@@ -91,15 +91,19 @@ function menuDisplay() {
 			left: '-10em'
 		}, 50);
 		$('#float-box').fadeOut('fast');
-		$('html').css('overflow', 'visible');
-		$('#wrapper').css('pointer-events', 'auto');
+		$('html').css({
+			'overflow': 'visible',
+			'touch-action': 'auto'
+		});
 	}else {
 		$('#menu').animate({
 			left: '0px'
 		}, 50);
 		$('#float-box').fadeIn('fast');
-		$('html').css('overflow', 'hidden');
-		$('#wrapper').css('pointer-events', 'none');
+		$('html').css({
+			'overflow': 'hidden',
+			'touch-action': 'none'
+		});
 	}
 }
 
