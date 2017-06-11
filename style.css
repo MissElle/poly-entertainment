@@ -174,7 +174,7 @@ nav ul {
 }
 
 @media all and (max-width: 40em) {
-	.scanlines {top: 8em;}
+	.scanlines {top: 7em;}
 }
 
 .content {
@@ -231,7 +231,7 @@ h1 {
 #welcome{
 	position: relative;
 	top: 7em;
-	opacity: 1;
+	opacity: 0;
 	animation-name: startupHello;
 	animation-duration: 5s;
 	animation-iteration-count: 1;
@@ -246,8 +246,6 @@ h2 {
 .reflection {
 	align-content: center;	
 	transform: scaleY(-1);
-	perspective: 400px;
-	-webkit-perspective: 400px;
 	margin: -1.4em 0 0 0;
 	width: 100%;
 	opacity: .3;
@@ -269,8 +267,8 @@ h2 {
 
 #timer {
 	position: relative;
-	top: -10.5em;
-	opacity: 0;
+	top: -12em;
+	opacity: 1;
 	text-align: center;
 	animation-name: startupTimer;
 	animation-duration: 8s;
