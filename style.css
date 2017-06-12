@@ -220,13 +220,13 @@ h1 {
 /*animations for logo and title*/
 
 #logo:active {
-	animation: rotate;
-	animation-duration: .23s;
+	animation-name: rotateIn;
+	animation-duration: .5s;
 	animation-iteration-count: infinite;
-	animation-timing-function: ease-in;
+	animation-timing-function: linear;
 }
 
-@-moz-keyframes rotate {
+@-moz-keyframes rotateIn {
 	100% {
 		transform: rotate(720deg);
 		-webkit-transform: rotate(720deg);
@@ -234,18 +234,43 @@ h1 {
 	}	
 }
 
-@-webkit-keyframes rotate {
+@-webkit-keyframes rotateIn {
 	100% {
 		transform: rotate(720deg);
 		-webkit-transform: rotate(720deg);
 		-moz-transform: rotate(720deg);
 	}
 }
-@keyframes rotate {
+@keyframes rotateIn {
 	100% {
 		transform: rotate(720deg);
 		-webkit-transform: rotate(720deg);
 		-moz-transform: rotate(720deg);
+	}
+}
+
+	/*=================================================*/
+	/*These animations will be called with the javascript, which will change the name depending on the count variable*/
+@-moz-keyframes rotateOut {
+	100% {
+		transform: rotate(-720deg);
+		-webkit-transform: rotate(-720deg);
+		-moz-transform: rotate(-720deg);
+	}	
+}
+
+@-webkit-keyframes rotateOut {
+	100% {
+		transform: rotate(-720deg);
+		-webkit-transform: rotate(-720deg);
+		-moz-transform: rotate(-720deg);
+	}
+}
+@keyframes rotateOut {
+	100% {
+		transform: rotate(-720deg);
+		-webkit-transform: rotate(-720deg);
+		-moz-transform: rotate(-720deg);
 	}
 }
 
