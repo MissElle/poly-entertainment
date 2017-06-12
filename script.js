@@ -4,8 +4,8 @@
 
 //=================================================//
 
-$('#hamburger').on('click', menuDisplay);
-$('#float-box').on('click', menuDisplay);
+$('#hamburger').on('mousedown', menuDisplay);
+$('#float-box').on('mousedown', menuDisplay);
 $(window).on('resize', screenSizeGrows);
 $(window).on('resize', changeHTMLStyles);
 $(document).ready(changeHTMLStyles);
@@ -105,7 +105,7 @@ function menuDisplay() {
 	if (count%2 === 0) {
 		$('#menu').animate({
 			left: '-10em'
-		}, 50);
+		}, 200);
 		$('#float-box').fadeOut('fast');
 		$('html').css({
 			'overflow': 'visible',
@@ -115,7 +115,7 @@ function menuDisplay() {
 	}else {
 		$('#menu').animate({
 			left: '0px'
-		}, 50);
+		}, 300);
 		$('#float-box').fadeIn('fast');
 		$('html').css({
 			'overflow': 'hidden',
