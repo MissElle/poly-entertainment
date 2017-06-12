@@ -92,7 +92,7 @@ nav ul {
 		top: 0em;
 		left: -10em;
 		padding-top: 3.4em;
-		width: 8.3em;
+		width: 7em;
 		height: 100vh;
 		flex-flow: column nowrap;
 		justify-content: space-around;
@@ -109,7 +109,7 @@ nav ul {
 		margin: 2em 0;
 		background-color: #fcfcfc;
 	}
-	.social-menu ul {display: flex;}
+	.social-menu ul {display: flex; padding: 0 .1em 0 0;}
 	.social-menu li {
 		display: block;
 		background-color: transparent;
@@ -203,16 +203,50 @@ h1 {
 	justify-content: center;
 }
 
-.name-inc {
+#name-inc {
 	height: 3em;
 	width: auto;
 	display: block;
 	margin: 0 .2em;
 }
 
-.logo {
+#logo {
 	width: 5em;
-	margin: .1em;
+	height: 5.6em;
+	margin: -.5em .1em .1em .1em;
+}
+
+/*=================================================*/
+/*animations for logo and title*/
+
+#logo:active {
+	animation: rotate;
+	animation-duration: .23s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
+
+@-moz-keyframes rotate {
+	100% {
+		transform: rotate(720deg);
+		-webkit-transform: rotate(720deg);
+		-moz-transform: rotate(720deg);
+	}	
+}
+
+@-webkit-keyframes rotate {
+	100% {
+		transform: rotate(720deg);
+		-webkit-transform: rotate(720deg);
+		-moz-transform: rotate(720deg);
+	}
+}
+@keyframes rotate {
+	100% {
+		transform: rotate(720deg);
+		-webkit-transform: rotate(720deg);
+		-moz-transform: rotate(720deg);
+	}
 }
 
 /*=================================================*/
