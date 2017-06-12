@@ -92,6 +92,7 @@ function screenSizeGrows() {
 		$('#menu').animate({
 			left: '-10em'
 			}, 50);
+		$('#logo').css('animation-name','rotateIn');
 	}
 }
 
@@ -110,6 +111,7 @@ function menuDisplay() {
 			'overflow': 'visible',
 			'touch-action': 'auto'
 		});
+		$('#logo').css('animation-name','rotateOut');
 	}else {
 		$('#menu').animate({
 			left: '0px'
@@ -119,6 +121,7 @@ function menuDisplay() {
 			'overflow': 'hidden',
 			'touch-action': 'none'
 		});
+		$('#logo').css('animation-name','rotateIn');
 	}
 }
 
