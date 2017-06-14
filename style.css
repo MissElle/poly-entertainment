@@ -523,7 +523,7 @@ textarea {
 button {
 	margin: 1em 80%;
 	border-radius: .2em;
-	background-color: #ffffff;
+	background:linear-gradient(#ffffff, #e2e2e2);
 	color: #141414;
 	border-color: #9a9a9a;
 	border-style: solid;
