@@ -102,25 +102,22 @@ function screenSizeGrows() {
 			left: '-10em'
 			}, 50);
 		$('#logo').css('animation-name','rotateIn');
-		var letters = $('.letter-animate');
-//		letters.each(function(){
-//			for(var i=0; i<letters.length; ++i){
-//				$(this).animate({
-//					left: '1.166em',
-//					opacity: 0
-//				}, 500);
-//			}
-	}else {
-		var letters = $('.letter-animate');
-			letters.each(function(){
-				for(var i=0; i<letters.length; ++i){
-					var thisLength = -18.66;
-					$(this).animate({
-						left: thisLength,
-						opacity: 0
-					}, 10000)
-				thisLength -= 18.66;
-			}
+		var thisLength = 25;
+			$('.letter-animate').each(function(index, obj){
+				$(this).animate({
+					left: 0,
+					opacity: 1
+				}, 200);
+			thisLength += 25;
+		});
+	}else if ($(window).width()<=640) {
+		var thisLength = -25;
+			$('.letter-animate').each(function(index, obj){
+				$(this).animate({
+					left: thisLength,
+					opacity: 0
+				}, 200);
+			thisLength += -25;
 		});
 	}
 }
