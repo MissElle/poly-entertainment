@@ -203,11 +203,24 @@ h1 {
 	justify-content: center;
 }
 
-#name-inc {
+.name-inc {
 	height: 3em;
 	width: auto;
 	display: block;
-	margin: 0 .2em;
+}
+
+#t-1, #t-2, #t3 {
+	margin: 0 -.4em 0 0;
+}
+
+.name-inc:first-child {
+	margin: 0 .4em 0 .6em;
+}
+
+#e-svg {
+	height: 1.6em;
+	position: relative;
+	top: .87em;
 }
 
 #logo {
@@ -219,6 +232,182 @@ h1 {
 /*=================================================*/
 /*animations for logo and title*/
 
+@media all and (max-width: 40em) {
+	#e-svg {
+		position: relative;
+		animation-name: eGrow;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+	}
+	#n-1 {
+		animation-name: letColn-1;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		transition: width 2s linear;
+	}
+	#t-1 {
+		animation-name: letColt-1;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		transition: width 2s linear;
+	}
+	
+	#e-2{
+		animation-name: letCole-2;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		transition: width 2s linear;
+	}
+	#r{
+		animation-name: letColr;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		transition: width 2s linear;
+	}
+	#t-2{
+		animation-name: letColt-2;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		transition: width 2s linear;
+	} 
+	#a{
+		animation-name: letCola;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		transition: width 2s linear;
+	} 
+	#i{
+		animation-name: letColn-i;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		transition: width 2s linear;
+	} 
+	#n-2{
+		animation-name: letColn-2;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		transition: width 2s linear;
+	} 
+	#m{
+		animation-name: letColm;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		transition: width 2s linear;
+	} 
+	#e-3{
+		animation-name: letColne-3;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		transition: width 2s linear;
+	} 
+	#n-3{
+		animation-name: letColn-3;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		transition: width 2s linear;
+	} 
+	#t-3{
+		animation-name: letColt-3;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		transition: width 2s linear;
+	}
+}
+
+@-moz-keyframes eGrow{
+	100% {
+		transform: scale(1.5, 1.5) rotate(720deg);
+		-webkit-transform: scale(1.5, 1.5) rotate(720deg);
+		-moz-transform: scale(1.5, 1.5) rotate(720deg);
+	}	
+}
+
+@-webkit-keyframes eGrow {
+	100% {
+		transform: scale(1.5, 1.5) rotate(720deg);
+		-webkit-transform: scale(1.5, 1.5) rotate(720deg);
+		-moz-transform: scale(1.5, 1.5) rotate(720deg);
+	}
+}
+@keyframes eGrow {
+	100% {
+		transform: scale(1.5, 1.5) rotate(720deg);
+		-webkit-transform: scale(1.5, 1.5) rotate(720deg);
+		-moz-transform: scale(1.5, 1.5) rotate(720deg);
+	}
+}
+
+@-moz-keyframes letColn-1{
+	100% {
+		transform: translateX(-1.8em);
+		opacity: 0;
+	}	
+}
+
+@-webkit-keyframes letColn-1{
+	100% {
+		transform: translateX(-1.8em);
+		opacity: 0;
+	}
+}
+@keyframes letColn-1{
+	100% {
+		transform: translateX(-1.8em);
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes letColt-1{
+	100% {
+		transform: translateX(-2.7em);
+		opacity: 0;
+	}	
+}
+
+@-webkit-keyframes letColt-1{
+	100% {
+		transform: translateX(-2.7em);
+		opacity: 0;
+	}
+}
+@keyframes letColt-1{
+	100% {
+		transform: translateX(-2.7em);
+		opacity: 0;
+	}
+}
+@-moz-keyframes letCole-2{
+	100% {
+		transform: translateX(-3.1em);
+		opacity: 0;
+	}	
+}
+
+@-webkit-keyframes letCole-2{
+	100% {
+		transform: translateX(-3.1em);
+		opacity: 0;
+	}
+}
+@keyframes letCole-2{
+	100% {
+		transform: translateX(-3.1em);
+		opacity: 0;
+	}
+}
 #logo:active {
 	animation-name: rotateIn;
 	animation-duration: .5s;
@@ -417,15 +606,16 @@ footer p {text-align: left;}
 @media all and (max-width: 48.5em) {
 	.social-footer {	
 		max-width: 9em;
-		max-height: 15em;
+		min-height: 17em;
 	}
 	.social-footer ul {flex-flow: column wrap;}
 	footer {min-height: 15.5em;}
 }
 
 @media all and (max-width: 29.1em){
-	.social-footer {max-width: 100%;}
+	.social-footer {max-width: 100%;min-height: 0em; max-height: 5em;}
 	.social-footer ul {
+		display: flex;
 		flex-flow: row nowrap;
 		padding-right: .5em;
 	}
@@ -453,6 +643,10 @@ input {
 	max-width: 80%;
 	margin: .1em 0 0 0;
 	border-radius: .2em;
+}
+
+footer p:nth-child(4) {
+	clear: both;
 }
 
 textarea {
