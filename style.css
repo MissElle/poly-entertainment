@@ -450,9 +450,6 @@ footer p {text-align: left;}
 	}
 }
 
-@media all and (max-width: 22.1em){
-	.social-footer ul{font-size: 10vw;}
-}
 /*=================================================*/
 /*contact form styling*/
 
