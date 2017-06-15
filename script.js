@@ -10,15 +10,6 @@ $(window).on('resize', screenSizeGrows);
 $(window).on('resize', changeHTMLStyles);
 $(document).ready(changeHTMLStyles);
 $(document).ready(timer);
-		
-//var startThis = letters.each(function(index){
-//			for(var i=0; i<letters.length; ++i){
-//				$(this).animate({
-//					left: '-1.166em',
-//					opacity: 0
-//				}, 500);
-//			}
-//		});
 
 //=================================================//
 //This counter is to be used for the menu functions
@@ -95,30 +86,13 @@ function changeHTMLStyles() {
 function screenSizeGrows() {
 	if ($(window).width()>640){
 		count = 0;
-    $('html').css('overflow', 'visible');
+    $('html').css('overflow-y', 'visible');
 		$('#toggle').removeAttr('style');
 		$('#float-box').removeAttr('style');
 		$('#menu').animate({
 			left: '-10em'
 			}, 50);
 		$('#logo').css('animation-name','rotateIn');
-		var thisLength = 25;
-			$('.letter-animate').each(function(){
-				$(this).stop().animate({
-					left: 0,
-					opacity: 1
-				}, 100);
-			thisLength += 25;
-		});
-	}else if ($(window).width()<=640) {
-		var thisLength = -25;
-			$('.letter-animate').each(function(){
-				$(this).stop().animate({
-					left: thisLength,
-					opacity: 0
-				}, 100);
-			thisLength += -25;
-		});
 	}
 }
 
@@ -129,7 +103,7 @@ function menuDisplay() {
 	++count
 	
 	if (count%2 === 0) {
-		$('#menu').animate({
+		$('#menu').stop().animate({
 			left: '-10em'
 		}, 200);
 		$('#float-box').fadeOut('fast');
@@ -139,7 +113,7 @@ function menuDisplay() {
 		});
 		$('#logo').css('animation-name','rotateOut');
 	}else {
-		$('#menu').animate({
+		$('#menu').stop().animate({
 			left: '0px'
 		}, 300);
 		$('#float-box').fadeIn('fast');
@@ -151,4 +125,12 @@ function menuDisplay() {
 	}
 }
 
-
+//=================================================//
+//This is leftover code, it will do a collapsing effect for items of the same class
+//		var thisLength = 25;
+//			$('.letter-animate').each(function(){
+//				$(this).stop().animate({
+//					left: 0,
+//					opacity: 1
+//				}, 100);
+//			thisLength += 25;
