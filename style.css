@@ -12,6 +12,10 @@ html {
 	overflow-x: hidden;
 }
 
+body {
+	width: 100%;
+}
+
 #wrapper {
 	width: 100%;
 	max-width: 51em;
