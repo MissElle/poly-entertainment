@@ -102,7 +102,7 @@ nav ul {
 
 	.menu {
 		display: flex;
-		position: fixed;
+		position: absolute;
 		top: 0em;
 		left: -10em;
 		padding-top: 3.4em;
