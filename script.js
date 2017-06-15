@@ -103,20 +103,20 @@ function screenSizeGrows() {
 			}, 50);
 		$('#logo').css('animation-name','rotateIn');
 		var thisLength = 25;
-			$('.letter-animate').each(function(index, obj){
-				$(this).animate({
+			$('.letter-animate').each(function(){
+				$(this).stop().animate({
 					left: 0,
 					opacity: 1
-				}, 200);
+				}, 100);
 			thisLength += 25;
 		});
 	}else if ($(window).width()<=640) {
 		var thisLength = -25;
-			$('.letter-animate').each(function(index, obj){
-				$(this).animate({
+			$('.letter-animate').each(function(){
+				$(this).stop().animate({
 					left: thisLength,
 					opacity: 0
-				}, 200);
+				}, 100);
 			thisLength += -25;
 		});
 	}
