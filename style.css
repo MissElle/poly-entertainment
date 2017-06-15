@@ -25,7 +25,14 @@ header {
 	background-color: #fcfcfc;
 }
 
-.hamburger {width: 4em; display: none; z-index: 99;}
+h1 {
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+.hamburger {display: none; z-index: 99;}
 img {width: 100%;}
 
 .menu {width: 100%; height: 2em; float: left; background-color: #fcfcfc; z-index: 100;}
@@ -68,11 +75,11 @@ nav ul {
 }
 
 @media all and (max-width: 40em) {
-	
+	h1 {justify-content: flex-start; align-content: flex-start; align-items: center;}
 	header {
 		display: flex;
 		flex-flow: row nowrap;
-		justify-content: flex-start;
+		height: auto;
 	}
 	
 	#float-box {
@@ -86,7 +93,7 @@ nav ul {
 		opacity: .5;
 		z-index: 2;
 	}
-	.hamburger{display: block; height: 5.3em; width: 5.3em; margin: 0 0 0 .5em; cursor: pointer;}
+	.hamburger{display: block; margin: 0 0 0 .5em; cursor: pointer; max-height: .2em;}
 
 	.menu {
 		display: flex;
@@ -163,7 +170,7 @@ nav ul {
 
 .scanlines {
 	position: absolute;
-	top: 9em;
+	top: 7.5em;
 	height: 100vh;
 	width: 100%;
 	background-image: url(images/scanlines.png);
@@ -175,7 +182,10 @@ nav ul {
 }
 
 @media all and (max-width: 40em) {
-	.scanlines {top: 7em;}
+	.scanlines {top:14vw;}
+}
+@media all and (max-width: 28.9em){
+	.scanlines {top:15.5vw;}	
 }
 
 .content {
@@ -199,20 +209,10 @@ nav ul {
 /*=================================================*/
 /*stylings for images*/
 
-h1 {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-}
-
 .name-inc {
-	height: 3em;
+	height: 2.3em;
 	width: auto;
 	display: block;
-}
-
-#t-1, #t-2, #t3 {
-	margin: 0 -.4em 0 0;
 }
 
 .name-inc:first-child {
@@ -220,29 +220,17 @@ h1 {
 }
 
 #logo {
-	width: 5em;
-	height: 5.6em;
-	margin: -.5em .1em .1em .1em;
-}
-
-#e-svg {
-	height: 1.6em;
-	position: relative;
-	top: .87em;
-}
-
-#n-1, #t-1, #e-2, #r, #t-2, #a, #i, #n-2, #m, #e-3, #n-3, #t-3 {
-	position: relative;
-/*	left: -1.166em;*/
+	width: 14vw;
+	height: 16vw;
 }
 
 /*=================================================*/
 /*animations for logo and title*/
 
 @media all and (max-width: 40em) {
-	#e-svg {
-		position: relative;
-	}
+	.name-inc {height: 11vw;}
+	.name-inc:first-child {margin: 0 .3em; 0 0}
+	#logo {margin: -4.3vw 0 0 0; padding: .1em;}
 }
 	
 #logo:active {
