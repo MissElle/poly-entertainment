@@ -6,9 +6,10 @@
 /*Stylings for the header and menu*/
 
 * {margin: 0; box-sizing: border-box;}
+
 html {
 	background-color: #e2e2e2;
-	)
+	overflow-x: hidden;
 }
 
 #wrapper {
@@ -67,6 +68,7 @@ nav ul {
 }
 
 @media all and (max-width: 40em) {
+	
 	header {
 		display: flex;
 		flex-flow: row nowrap;
