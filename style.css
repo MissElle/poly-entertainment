@@ -242,37 +242,9 @@ h1 {
 @media all and (max-width: 40em) {
 	#e-svg {
 		position: relative;
-		animation-name: eGrow;
-		animation-duration: 2s;
-		animation-iteration-count: 1;
-		animation-timing-function: linear;
 	}
 }
-
-@-moz-keyframes eGrow{
-	100% {
-		transform: scale(1.5, 1.5) rotate(720deg);
-		-webkit-transform: scale(1.5, 1.5) rotate(720deg);
-		-moz-transform: scale(1.5, 1.5) rotate(720deg);
-	}	
-}
-
-@-webkit-keyframes eGrow {
-	100% {
-		transform: scale(1.5, 1.5) rotate(720deg);
-		-webkit-transform: scale(1.5, 1.5) rotate(720deg);
-		-moz-transform: scale(1.5, 1.5) rotate(720deg);
-	}
-}
-@keyframes eGrow {
-	100% {
-		transform: scale(1.5, 1.5) rotate(720deg);
-		-webkit-transform: scale(1.5, 1.5) rotate(720deg);
-		-moz-transform: scale(1.5, 1.5) rotate(720deg);
-	}
-}
-
-}
+	
 #logo:active {
 	animation-name: rotateIn;
 	animation-duration: .5s;
