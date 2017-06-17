@@ -9,46 +9,42 @@
   	<title>Poly entertainment</title>
 	</head>
 	<body>
-		<header>
-			<div class="hamburger" id="hamburger"><img src="images/logo.svg" id="logo"></div>
-			<h1>
-				<img src="images/poly.svg" alt="Poly Entertainment" class="name-inc">
-				<img src="images/entertainment.svg" alt="" class="name-inc" id="ntertainment-svg">
-			</h1>
-				<div class="menu" id="menu">
-					<nav><ul>
-						<li class="menu-links"><a href="#">games</a></li>
-						<li class="menu-links"><a href="#">mission</a></li>
-						<li class="menu-links"><a href="#">contact</a></li>
-					</ul></nav>
-					<div class="social-menu"><ul>
-						<li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fa fa-tumblr-square" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					</ul></div>
-				</div>
-				<div id="float-box"></div>
-		</header>
-		<div class="scanlines" id="scanlines"></div>
-		<div id="wrapper">
-			<article class="content launch">
-				<div id="welcome">
-					<h2>Welcome</h2>
-					<div class="reflection"><h2>Welcome</h2></div>
-					<div class="overlay-fade"></div>
-				</div>
-				<div id="timer">
-					<p id="timer-clock"></p>
-					<p class="timer-text">Time to launch<br>February 8, 2018</p>
-				</div>
-			</article>
+		<div id="launch-scanlines" class="scanlines"></div>
+		<div id="wrapper" class="launch-wrapper">
 			<article class="content">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed sapien vitae orci posuere fermentum. Integer elementum iaculis blandit. Suspendisse ullamcorper, magna et aliquam efficitur, nunc leo hendrerit diam, sed imperdiet velit nulla nec dui. Nullam non nisl vehicula, hendrerit nibh ac, commodo felis. Morbi sed scelerisque tortor, ut semper dui. Nam auctor eget nisi eget maximus. Suspendisse congue eget felis bibendum vestibulum. Pellentesque rutrum luctus magna, id lobortis nisi dictum a. Vestibulum bibendum non ligula ac placerat. Aliquam hendrerit malesuada orci, in tincidunt nunc porta ut. Aliquam sed quam tristique, commodo elit a, auctor ipsum.</p>
+				<img src="images/logo.svg" class="launch-spin-8">
+				<h1>
+					<img src="images/poly.svg" alt="Poly" class="launch-page">
+					<img src="images/entertainment.svg" alt="entertainment" class="launch-font">
+				</h1>
+	<!--
+						<nav><ul>
+							<li class="menu-links"><a href="#">games</a></li>
+							<li class="menu-links"><a href="mission.html">mission</a></li>
+							<li class="menu-links"><a href="#">contact</a></li>
+						</ul></nav>
+						<ul>
+							<li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-tumblr-square" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						</ul>
+	-->
+
+
+					<div id="welcome" class="launch-welcome">
+						<h2>Welcome</h2>
+						<div class="reflection"><h2>Welcome</h2></div>
+						<div class="overlay-fade"></div>
+					</div>
+					<div id="timer" class="launch-welcome">
+						<p id="timer-clock"></p>
+						<p class="timer-text">Time to launch<br>February 8, 2018</p>
+					</div>
+
 			</article>
-			<article class="content">
-			<p>Suspendisse dapibus interdum libero ac imperdiet. Donec scelerisque at ante aliquam varius. Quisque pretium sed nisi eget auctor. Duis erat odio, posuere porttitor facilisis vitae, laoreet condimentum libero. Etiam luctus nibh nec luctus porttitor. Suspendisse vitae diam id enim mollis posuere ut ornare purus. Donec ultrices ultricies odio dignissim efficitur.</p></article>
-			
+		</div>
+<!--
 			<footer class="content">
 				<div class="social-footer"><ul>
 					<li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
@@ -67,8 +63,9 @@
 						<button id="submit">Submit</button>
 					</form>
 				</section>
+
 			</footer>
-		</div>
+-->
 		<script src="jquery-3.2.1.min.js"></script>
   	<script src="script.js"></script>
 	</body>
