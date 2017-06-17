@@ -77,7 +77,7 @@ function changeHTMLStyles() {
 
 	//This changes the scanlines height to always match the div #wrapper size
 	var articleHeight = $('#wrapper').height();
-	$('#scanlines').height(articleHeight);
+	$('.scanlines').height(articleHeight);
 }
 
 //=================================================//

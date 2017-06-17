@@ -174,7 +174,7 @@ nav ul {
 /*=================================================*/
 /*stylings for the main body and videos*/
 
-#scanlines {
+.scanlines {
 	position: absolute;
 	top: 7.5em;
 	height: 100vh;
@@ -188,10 +188,10 @@ nav ul {
 }
 
 @media all and (max-width: 40em) {
-	#scanlines {top:14vw;}
+	.scanlines {top:14vw;}
 }
 @media all and (max-width: 28.9em){
-	#scanlines {top:15.5vw;}	
+	.scanlines {top:15.5vw;}	
 }
 
 .content {
@@ -557,3 +557,16 @@ button {font-size: 1.5em;}
 font-family: 'Quicksand', sans-serif; **general font**
 font-family: 'Share Tech', sans-serif; **timer font**
 font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/ 
+
+/*=================================================*/
+/*stylings solely for the launch page*/
+
+#launch-scanlines {
+	top: 0;
+}
+
+.launch-wrapper {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
