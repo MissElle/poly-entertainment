@@ -75,8 +75,8 @@ function changeHTMLStyles() {
 	$('#menu .fa-tumblr-square').css('color', '#36465d');
 	$('#menu .fa-twitter').css('color', '#1b95e0');
 
-	//This changes the scanlines height to always match the div #wrapper size
-	var articleHeight = $('#wrapper').height();
+	//This changes the scanlines height to always match the div .wrapper size
+	var articleHeight = $('.wrapper').height();
 	$('.scanlines').height(articleHeight);
 }
 

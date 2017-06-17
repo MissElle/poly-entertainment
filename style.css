@@ -18,7 +18,7 @@ body {
 	overflow-x: hidden;
 }
 
-#wrapper {
+.wrapper {
 	width: 100%;
 	max-width: 51em;
 	margin: 0 auto; 
@@ -565,8 +565,14 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 	top: 0;
 }
 
-.launch-wrapper {
+#launch-wrapper {
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
+}
+
+.launch-spin-8 {
+	height: 15em;
+	width: 13em;
+	cursor: crosshair;
 }
