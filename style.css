@@ -174,7 +174,7 @@ nav ul {
 /*=================================================*/
 /*stylings for the main body and videos*/
 
-.scanlines {
+#scanlines {
 	position: absolute;
 	top: 7.5em;
 	height: 100vh;
@@ -188,10 +188,10 @@ nav ul {
 }
 
 @media all and (max-width: 40em) {
-	.scanlines {top:14vw;}
+	#scanlines {top:14vw;}
 }
 @media all and (max-width: 28.9em){
-	.scanlines {top:15.5vw;}	
+	#scanlines {top:15.5vw;}	
 }
 
 .content {
@@ -304,7 +304,7 @@ nav ul {
 }
 
 /*=================================================*/
-/*Stylings for welcome and reflection fonts, launch page */
+/*Stylings for welcome and reflection fonts */
 
 #welcome{
 	position: relative;
