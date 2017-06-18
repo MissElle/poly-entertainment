@@ -306,7 +306,7 @@ nav ul {
 /*=================================================*/
 /*Stylings for welcome and reflection fonts */
 
-#welcome{
+.welcome{
 	position: relative;
 	top: 7em;
 	opacity: 0;
@@ -343,7 +343,7 @@ h2 {
 	height: 23em;
 }
 
-#timer {
+.timer {
 	position: relative;
 	top: -12em;
 	opacity: 1;
@@ -378,15 +378,15 @@ h2 {
 @media all and (max-width:30em){
 	.launch {height: 84vw;}
 	#timer-clock {font-size: 11vw;}	
-	#welcome {top: 25vw;}
+	.welcome {top: 25vw;}
 }
 
 @media all and (max-width: 23.2em){
-	#welcome {
+	.welcome {
 		top: 20vw;
 		font-size: 4.3vw;
 	}
-	#timer{top: -46.4vw;}
+	.timer{top: -46.4vw;}
 }
 
 @media all and (max-width:20em) {
@@ -568,11 +568,41 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 #launch-wrapper {
 	width: 100vw;
 	height: 100vh;
+	max-width: 100%;
 	overflow: hidden;
+}
+
+.launch-font {
+	height: 4em;
+	width: auto;
+}
+
+h1.launch-color {
+	color: #ffffff;
+}
+
+h1.launch-color img{
+	fill: currentColor;
+}
+
+.launch-font:not(:first-child) {
+	min-width: 20.5em;
+}
+	
+.launch-font:first-child {
+	padding: 0 .6em 0 0;
 }
 
 .launch-spin-8 {
 	height: 15em;
 	width: 13em;
 	cursor: crosshair;
+}
+
+.launch-welcome {
+	
+}
+
+.launch-timer {
+ 
 }
