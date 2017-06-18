@@ -526,6 +526,10 @@ button:active {
 /*=================================================*/
 /*font stylings*/
 
+h1 svg {
+	fill: #471ca5;
+}
+
 h1, h2, h3, h4 {
 	font-family: 'Montserrat Alternates', sans-serif; 
 }
@@ -572,31 +576,80 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 	overflow: hidden;
 }
 
-.launch-font {
+#launch-title {
 	height: 4em;
 	width: auto;
 }
 
-h1.launch-color {
-	color: #ffffff;
-}
-
-h1.launch-color img{
-	fill: currentColor;
-}
-
-.launch-font:not(:first-child) {
+#launch-title:not(:first-child) {
 	min-width: 20.5em;
 }
 	
-.launch-font:first-child {
+#launch-title:first-child {
 	padding: 0 .6em 0 0;
 }
 
 .launch-spin-8 {
-	height: 15em;
-	width: 13em;
+	height: 10em;
+	margin: 3em auto 1em auto;
 	cursor: crosshair;
+	animation-name: rotate8;
+	animation-duration: 1.6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	transform-origin: 50% 43%;
+	-ms-transform-origin: 50% 43%;
+	-webkit-transform-origin: 50% 43%;
+	animation-play-state: paused;
+	-moz-animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+}
+
+.launch-spin-8:hover {
+	animation-play-state: running;
+	-moz-animation-play-state: running;
+	-webkit-animation-play-state: running;
+}
+
+@-moz-keyframes rotate8 {
+	100% {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+	}	
+}
+
+@-webkit-keyframes rotate8 {
+	100% {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+	}
+}
+@keyframes rotate8 {
+	100% {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate8back {
+	transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	-webkit-transform: rotate(-20deg);
+}
+
+@-moz-keyframes rotate8back {
+	transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	-webkit-transform: rotate(-20deg);
+}
+
+@webkit-keyframes rotate8back {
+	transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	-webkit-transform: rotate(-20deg);
 }
 
 #launch-welcome {
@@ -604,5 +657,6 @@ h1.launch-color img{
 }
 
 #launch-timer {
-
+	top: -15em;
+	font-size: .9em;
 }
