@@ -4,6 +4,7 @@
 
 //=================================================//
 
+$('.launch-spin-8').on('click', spinIt);
 $('#hamburger').on('mousedown', menuDisplay);
 $('#float-box').on('mousedown', menuDisplay);
 $(window).on('resize', screenSizeGrows);
@@ -14,6 +15,18 @@ $(document).ready(timer);
 //=================================================//
 //This counter is to be used for the menu functions
 var count = 0;
+
+//=================================================//
+//This allows users to pause the spinner if desired
+
+function spinIt() {
+	if($('.launch-spin-8').css('animation-play-state') === 'running'){
+			$('.launch-spin-8').css('animation-play-state', 'paused'); 
+	}else{
+		$('.launch-spin-8').removeAttr('style');
+//		$('.launch-spin-8').css('animation-play-state', 'running');
+	}
+}
 
 //=================================================//
 //This timer counts to the launch date
