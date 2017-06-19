@@ -594,18 +594,13 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 	margin: 3em auto 1em auto;
 	cursor: crosshair;
 	animation-name: rotate8;
+	animation-delay: 1.1s;
 	animation-duration: 1.6s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 	transform-origin: 50% 43%;
 	-ms-transform-origin: 50% 43%;
 	-webkit-transform-origin: 50% 43%;
-	animation-play-state: paused;
-	-moz-animation-play-state: paused;
-	-webkit-animation-play-state: paused;
-}
-
-.launch-spin-8:hover {
 	animation-play-state: running;
 	-moz-animation-play-state: running;
 	-webkit-animation-play-state: running;
