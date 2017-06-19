@@ -659,8 +659,8 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 }
 
 #launch-timer {
-	top: -20em;
 	font-size: .9em;
+	top: -20em;
 }
 
 @media all and (max-width: 41em){
@@ -674,7 +674,11 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 		min-width: 1em;	
 		padding: 0 .4em 0 0;
 	}
-	.launch-spin-8{position: relative;}
+	#launch-timer{top: -45vw;}
+}
+
+@media all and (max-width: 35em){
+	#launch-welcome {font-size: 4.3vw;}
 }
 
 @media all and (max-width: 30em){
