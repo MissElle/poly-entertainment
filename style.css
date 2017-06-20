@@ -571,7 +571,7 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 
 #launch-wrapper {
 	width: 100vw;
-	height: 100vh;
+	height: 98vh;
 	max-width: 100%;
 	overflow: hidden;
 }
@@ -696,7 +696,7 @@ svg {
 	-moz-filter: drop-shadow(0 0 .2em #7fccff);
 }
 
-@media all and (max-width: 41em){
+@media all and (max-width: 47em){
 	#poly-launch, #entertainment-launch {
 		width: auto;
 		height: 14vw;
@@ -716,5 +716,8 @@ svg {
 }
 
 @media all and (max-width: 23em){
+	#poly-launch, #entertainment-launch {
+		height: 13vw;
+	}
 	#launch-timer #timer-clock{font-size:11vw;}
 }
