@@ -591,6 +591,7 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 	animation-play-state: running;
 	-moz-animation-play-state: running;
 	-webkit-animation-play-state: running;
+	pointer-events: none;
 }
 
 @-moz-keyframes rotate8 {
@@ -637,22 +638,6 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 	animation-duration: 1s;
 }
 
-#launch-title {
-	height: 4em;
-	width: auto;
-	opacity: 1;
-	animation-name: nameFadeIn;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in-out;
-	animation-duration: 7s;
-	padding: 0 .6em 0 0;
-}
-
-#launch-title:not(:first-child) {
-	min-width: 20.5em;
-	padding: 0 0 0 0;
-}
-
 #launch-welcome {
 	font-size: 1.5em;
 	top: 3.4em;
@@ -661,6 +646,49 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 #launch-timer {
 	font-size: .9em;
 	top: -20em;
+}
+
+.svg-container, .logo-fade-in {
+	text-align: center;
+	cursor: pointer;
+}
+
+svg {
+	height: 5em;
+	width: auto;
+}
+
+#poly-launch {
+  margin: 0 .5em 0 0;	
+}
+
+#logo-launch path {
+	fill: #ffffff;
+	opacity: 1;	
+}
+
+#poly-launch path, #entertainment-launch path{
+	fill: #ffffff;
+	opacity: 1;
+	animation-name: nameFadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-duration: 7s;
+	padding: 0 .6em 0 0;
+}
+
+.svg-container:hover #poly-launch path, .svg-container:hover #entertainment-launch path, .logo-fade-in:hover #logo-launch path{
+	fill: #7fccff;
+}
+
+.svg-container:active #poly-launch path, .svg-container:active #entertainment-launch path, .logo-fade-in:active #logo-launch path{
+	fill: #ffffff;
+}
+
+.svg-container:active #poly-launch, .svg-container:active #entertainment-launch, .logo-fade-in:active #logo-launch{
+	filter: drop-shadow(0 0 .2em #7fccff);
+	-webkit-filter: drop-shadow(0 0 .2em #7fccff);
+	-moz-filter: drop-shadow(0 0 .2em #7fccff);
 }
 
 @media all and (max-width: 41em){
