@@ -89,7 +89,7 @@ function changeHTMLStyles() {
 	$('#menu .fa-tumblr-square').css('color', '#36465d');
 	$('#menu .fa-twitter').css('color', '#1b95e0');
 
-	if ($('#launch-wrapper') {
+	if ($('#launch-wrapper')) {
 		$('html').css('overflow', 'hidden');
 		$('body').css('overflow', 'hidden');
 	}
