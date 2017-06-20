@@ -591,7 +591,6 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 	animation-play-state: running;
 	-moz-animation-play-state: running;
 	-webkit-animation-play-state: running;
-	pointer-events: none;
 }
 
 @-moz-keyframes rotate8 {
@@ -662,6 +661,12 @@ svg {
   margin: 0 .5em 0 0;	
 }
 
+#logo-launch {
+	filter: drop-shadow(0 0 .2em #7fccff);
+	-webkit-filter: drop-shadow(0 0 .2em #7fccff);
+	-moz-filter: drop-shadow(0 0 .2em #7fccff);
+}
+
 #logo-launch path {
 	fill: #ffffff;
 	opacity: 1;	
@@ -685,7 +690,7 @@ svg {
 	fill: #ffffff;
 }
 
-.svg-container:active #poly-launch, .svg-container:active #entertainment-launch, .logo-fade-in:active #logo-launch{
+.svg-container:active #poly-launch, .svg-container:active #entertainment-launch {
 	filter: drop-shadow(0 0 .2em #7fccff);
 	-webkit-filter: drop-shadow(0 0 .2em #7fccff);
 	-moz-filter: drop-shadow(0 0 .2em #7fccff);
