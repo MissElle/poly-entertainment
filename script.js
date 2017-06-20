@@ -22,9 +22,10 @@ var count = 0;
 function spinIt() {
 	if($('.launch-spin-8').css('animation-play-state') === 'running'){
 			$('.launch-spin-8').css('animation-play-state', 'paused'); 
+			$('#logo-launch').css('filter', 'none');
 	}else{
 		$('.launch-spin-8').removeAttr('style');
-//		$('.launch-spin-8').css('animation-play-state', 'running');
+		$('#logo-launch').removeAttr('style');
 	}
 }
 
