@@ -701,6 +701,9 @@ svg {
 		width: auto;
 		height: 14vw;
 	}
+	#entertainment-launch {
+		margin: 0 .5em 0 0;
+	}
 	#launch-timer{top: -45vw;}
 }
 
