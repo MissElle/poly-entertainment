@@ -701,6 +701,7 @@ svg {
 		width: auto;
 		height: 14vw;
 		margin: 0 auto;
+		padding: 0 .5em 0 0;
 	}
 	#launch-timer{top: -45vw;}
 }
