@@ -697,15 +697,11 @@ svg {
 }
 
 @media all and (max-width: 41em){
-	#launch-title{
+	#poly-launch, #entertainment-launch {
 		width: auto;
 		height: 14vw;
 		margin: 0 auto;
 		padding: 0 0 0 .5em;
-	}
-	#launch-title:not(:first-child){
-		min-width: 1em;	
-		padding: 0 .4em 0 0;
 	}
 	#launch-timer{top: -45vw;}
 }
