@@ -31,7 +31,7 @@ header {
 	background-color: #fcfcfc;
 }
 
-h1 {
+.name-holder {
 	width: 100%;
 	display: flex;
 	flex-flow: row nowrap;
@@ -81,7 +81,7 @@ nav ul {
 }
 
 @media all and (max-width: 40em) {
-	h1 {justify-content: flex-start; align-content: flex-start; align-items: center;}
+	.name-holder {justify-content: flex-start; align-content: flex-start; align-items: center;}
 	header {
 		display: flex;
 		flex-flow: row nowrap;
@@ -221,13 +221,21 @@ nav ul {
 	display: block;
 }
 
+.name-inc path, #logo path {
+	fill: #471ca5;
+}
+
 .name-inc:first-child {
-	margin: 0 .4em 0 .6em;
+	padding: 0 .4em 0 0;
 }
 
 #logo {
 	width: 14vw;
 	height: 16vw;
+	padding: 0 1vw;
+	transform-origin: 50% 43%;
+	-ms-transform-origin: 50% 43%;
+	-webkit-transform-origin: 50% 43%;
 }
 
 /*=================================================*/
@@ -235,8 +243,8 @@ nav ul {
 
 @media all and (max-width: 40em) {
 	.name-inc {height: 11vw;}
-	.name-inc:first-child {margin: 0 .3em; 0 0}
-	#logo {margin: -4.3vw 0 0 0; padding: .1em;}
+	.name-inc:first-child {padding: 0 .3em 0 0;}
+	#logo {position: relative; top: -1em;}
 }
 	
 #logo:active {
@@ -526,10 +534,6 @@ button:active {
 /*=================================================*/
 /*font stylings*/
 
-h1 svg {
-	fill: #471ca5;
-}
-
 h1, h2, h3, h4 {
 	font-family: 'Montserrat Alternates', sans-serif; 
 }
@@ -652,7 +656,7 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 	cursor: pointer;
 }
 
-svg {
+.svg-container svg {
 	height: 5em;
 	width: auto;
 }
