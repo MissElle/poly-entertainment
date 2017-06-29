@@ -216,17 +216,14 @@ nav ul {
 /*stylings for images*/
 
 .name-inc {
-	height: 2.3em;
+	height: 4.4em;
 	width: auto;
 	display: block;
+	padding: 0.2em;
 }
 
 .name-inc path, #logo path {
 	fill: #471ca5;
-}
-
-.name-inc:first-child {
-	padding: 0 .4em 0 0;
 }
 
 #logo {
@@ -242,8 +239,7 @@ nav ul {
 /*animations for logo and title*/
 
 @media all and (max-width: 40em) {
-	.name-inc {height: 11vw;}
-	.name-inc:first-child {padding: 0 .3em 0 0;}
+	.name-inc {height: 11vw; padding: 0 .15em;}
 	#logo {position: relative; top: -1em;}
 }
 	
