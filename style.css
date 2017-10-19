@@ -235,6 +235,14 @@ nav ul {
 	-webkit-transform-origin: 50% 43%;
 }
 
+#logo-gradient {
+	width: 10em;
+	height: 10em;
+	z-index: 255;
+	background: #000000;
+	background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+}
+
 /*=================================================*/
 /*animations for logo and title*/
 
