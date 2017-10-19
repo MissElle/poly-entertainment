@@ -9,8 +9,6 @@
           .cls-6{fill:url(#linear-gradient-6);}
           
           .transparent{fill: none;}
-
-          svg {background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
 		</style>
 		
 		<linearGradient id="linear-gradient" x1="33.7476" y1="140.0535" x2="123.6533" y2="164.1437" gradientUnits="userSpaceOnUse">
