@@ -140,6 +140,32 @@ function menuDisplay() {
 }
 
 //=================================================//
+//This function is part of the conic-gradient polyfill from LeaVerou
+
+function $$(selector) {
+    return Array.prototype.slice.call(document.querySelectorAll(selector));
+}
+
+$$("#examples article").forEach(function (article, i) {
+    var style = article.getAttribute("style");
+    article.removeAttribute("style");
+
+    var div = document.createElement("div");
+    article.appendChild(div);
+
+    var textarea = document.createElement("textarea");
+    textarea.textContent = style;
+    (textarea.oninput = function() {
+        var fixed = StyleFix.fix(this.value);
+        div.setAttribute("style", fixed);
+    }).call(textarea);
+
+    new Incrementable(textarea);
+
+    article.appendChild(textarea);
+});
+
+//=================================================//
 //This is leftover code, it will do a collapsing effect for items of the same class
 //		var thisLength = 25;
 //			$('.letter-animate').each(function(){
