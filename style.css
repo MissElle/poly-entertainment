@@ -236,9 +236,13 @@ nav ul {
 }
 
 #logo-gradient {
-	width: 10em;
-	height: 10em;
+	height: 15vw;
+	width: 15vw;
 	z-index: 255;
+}
+
+path {
+	width: 100%;
 }
 
 /*=================================================*/
@@ -583,17 +587,15 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 }
 
 .launch-spin-8 {
-	height: 10em;
-	margin: 3em auto 1em auto;
 	cursor: crosshair;
 	animation-name: rotate8;
 	animation-delay: .8s;
 	animation-duration: 1.6s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
-	transform-origin: 50% 43%;
-	-ms-transform-origin: 50% 43%;
-	-webkit-transform-origin: 50% 43%;
+	transform-origin: 44% 43%;
+	-ms-transform-origin: 44% 43%;
+	-webkit-transform-origin: 44% 43%;
 	animation-play-state: running;
 	-moz-animation-play-state: running;
 	-webkit-animation-play-state: running;
@@ -668,6 +670,8 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 }
 
 #logo-launch {
+	height: 10em;
+	margin: 3em auto 1em auto;
 	filter: drop-shadow(0 0 .2em #7fccff);
 	-webkit-filter: drop-shadow(0 0 .2em #7fccff);
 	-moz-filter: drop-shadow(0 0 .2em #7fccff);
