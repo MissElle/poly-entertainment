@@ -78,7 +78,7 @@ function changeHTMLStyles() {
 	$('.content').each(function(){
 		var bgColor = $(this).css('background-color');
 		if( bgColor === 'rgb(252, 252, 252)') {
-			$('.fa').css('color', '#362166');
+			$('.fa').css('color', '#461ca4');
 		}else if(bgColor === 'rgb(54, 33, 102)')	{
 			$('.fa').css('color', '#ffffff');	
 		}
