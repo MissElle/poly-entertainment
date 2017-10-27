@@ -68,7 +68,7 @@ function timer() {
 		}else {
 			$('#timer-clock').html('<span class="large-time">'+days+'</span>'+' days<br><span class="small-time">'+hours+':'+minutes+':'+seconds+'</span>');
 		}
-	});
+	}, 1000);
 }
 
 //=================================================//
