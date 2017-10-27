@@ -57,18 +57,35 @@ nav ul {
 	width: 6em; 
 	margin: 0 .3em;
 	background-color: #fcfcfc;
+	-o-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-ms-transform: skew(20deg);
+	-webkit-transform: skew(20deg);
 	transform: skew(20deg);
-	transition-property: height, box-shadow;
-	transition-duration: .13s;
-	transition-timing-function: linear;
+	-ms-transition-property: height, box-shadow;
+	-ms-transition-duration: .13s;
+	-ms-transition-timing-function: linear;
+	-moz-transition-property: height, box-shadow;
+	-moztransition-duration: .13s;
+	-moz-transition-timing-function: linear;
+	-o-transition-property: height, box-shadow;
+	-o-transition-duration: .13s;
+	-o-transition-timing-function: linear;
 	-webkit-transition-property: height, box-shadow;
 	-webkit-transition-duration: .13s;
 	-webkit-transition-timing-function: linear;
+	transition-property: height, box-shadow;
+	transition-duration: .13s;
+	transition-timing-function: linear;
 	z-index: 100;
 }
 
 .menu-links a {
 	display: block;
+	-o-transform: skew(-20deg);
+	-ms-transform: skew(-20deg);
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
 	transform: skew(-20deg);
 }
 
@@ -130,9 +147,12 @@ nav ul {
 		background-color: transparent;
 		position: relative;
 		border-radius: 2em;
-		transition: all .05s ease-in-out;
+		-o-transition: all .05s ease-in-out;
+		-moz-transition: all .05s ease-in-out;
 		-webkit-transition: all .05s ease-in-out;
-		-ms-transition:all .05s ease-in-out;}
+		-ms-transition:all .05s ease-in-out;
+		transition: all .05s ease-in-out;
+	}
 }
 
 /*=================================================*/
@@ -148,14 +168,16 @@ nav ul {
 }
 
 .social-menu li:hover, .social-footer li:hover {
-	transform: scale(1.3, 1.3);
+	-o-transform: scale(1.3, 1.3);
 	-webkit-transform: scale(1.3, 1.3);
 	-ms-transform: scale(1.3, 1.3);
+	transform: scale(1.3, 1.3);
 }
 .social-menu li:active, .social-footer li:active {
-	transform: scale(1.45, 1.45);
+	-o-transform: scale(1.45, 1.45);
 	-webkit-transform: scale(1.45, 1.45);
 	-ms-transform: scale(1.45, 1.45);
+	transform: scale(1.45, 1.45);
 }
 
 /*=================================================*/
@@ -229,9 +251,11 @@ nav ul {
 	width: 14vw;
 	height: 16vw;
 	padding: 0 1vw;
-	transform-origin: 50% 43%;
+	-o-transform-origin: 50% 43%;
+	-moz-transform-origin: 50% 43%;
 	-ms-transform-origin: 50% 43%;
 	-webkit-transform-origin: 50% 43%;
+	transform-origin: 50% 43%;
 }
 
 #logo-gradient {
@@ -253,32 +277,47 @@ path {
 }
 	
 #logo:active {
+	-o-animation-name: rotateIn;
+	-moz-animation-name: rotateIn;
+	-webkit-animation-name: rotateIn;
 	animation-name: rotateIn;
+	-o-animation-duration: .5s;
+	-moz-animation-duration: .5s;
+	-webkit-animation-duration: .5s;
 	animation-duration: .5s;
+	-o-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
+	-o-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
 }
 
 @-moz-keyframes rotateIn {
 	100% {
-		transform: rotate(720deg);
+		-o-transform: rotate(720deg);
 		-webkit-transform: rotate(720deg);
 		-moz-transform: rotate(720deg);
+		transform: rotate(720deg);
 	}	
 }
 
 @-webkit-keyframes rotateIn {
 	100% {
-		transform: rotate(720deg);
+		-o-transform: rotate(720deg);
 		-webkit-transform: rotate(720deg);
 		-moz-transform: rotate(720deg);
+		transform: rotate(720deg);
 	}
 }
 @keyframes rotateIn {
 	100% {
-		transform: rotate(720deg);
+		-o-transform: rotate(720deg);
 		-webkit-transform: rotate(720deg);
 		-moz-transform: rotate(720deg);
+		transform: rotate(720deg);
 	}
 }
 
@@ -286,34 +325,76 @@ path {
 	/*These animations will be called with the javascript, which will change the name depending on the count variable*/
 @-moz-keyframes rotateOut {
 	100% {
-		transform: rotate(-720deg);
+		-o-transform: rotate(-720deg);
 		-webkit-transform: rotate(-720deg);
 		-moz-transform: rotate(-720deg);
+		transform: rotate(-720deg);
 	}	
 }
 
 @-webkit-keyframes rotateOut {
 	100% {
-		transform: rotate(-720deg);
+		-o-transform: rotate(-720deg);
 		-webkit-transform: rotate(-720deg);
 		-moz-transform: rotate(-720deg);
+		transform: rotate(-720deg);
 	}
 }
 @keyframes rotateOut {
 	100% {
-		transform: rotate(-720deg);
+		-o-transform: rotate(-720deg);
 		-webkit-transform: rotate(-720deg);
 		-moz-transform: rotate(-720deg);
+		transform: rotate(-720deg);
 	}
 }
 
 /*=================================================*/
 /*animation fades*/
 
+@-o-keyframes fadeIn {
+	0%{opacity: 0;}
+	70%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+	0%{opacity: 0;}
+	70%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+	0%{opacity: 0;}
+	70%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
 @keyframes fadeIn {
 	0%{opacity: 0;}
 	70%{opacity: 0;}
 	100%{opacity: 1;}
+}
+
+@-o-keyframes fadeInOut {
+	0% {opacity: 0;}
+	20% {opacity: 1;}
+	80% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@-moz-keyframes fadeInOut {
+	0% {opacity: 0;}
+	20% {opacity: 1;}
+	80% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@-webkit-keyframes fadeInOut {
+	0% {opacity: 0;}
+	20% {opacity: 1;}
+	80% {opacity: 1;}
+	100% {opacity: 0;}
 }
 
 @keyframes fadeInOut {
@@ -330,9 +411,17 @@ path {
 	position: relative;
 	top: 7em;
 	opacity: 0;
+	-o-animation-name: fadeInOut;
+	-moz-animation-name: fadeInOut;
+	-webkit-animation-name: fadeInOut;
 	animation-name: fadeInOut;
+	-o-animation-duration: 4.4s;
+	-moz-animation-duration: 4.4s;
+	-webkit-animation-duration: 4.4s;
 	animation-duration: 4.4s;
-	animation-iteration-count: 1;
+	-o-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	-webkit-animation-delay: 2s;
 	animation-delay: 2s;
 }
 
@@ -343,6 +432,9 @@ h2 {
 
 .reflection {
 	align-content: center;	
+	-o-transform: scaleY(-1);
+	-moz-transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
 	transform: scaleY(-1);
 	margin: -1.4em 0 0 0;
 	width: 100%;
@@ -368,9 +460,14 @@ h2 {
 	top: -12em;
 	text-align: center;
 	opacity: 1;
+	-o-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
+	-o-animation-duration: 8.8s;
+	-moz-animation-duration: 8.8s;
+	-webkit-animation-duration: 8.8s;
 	animation-duration: 8.8s;
-	animation-iteration-count: 1;
 }
 
 #timer-clock {
@@ -431,9 +528,11 @@ footer p {text-align: left;}
 	position: relative;
 	font-size: 2.2em;
 	border-radius: 2em;
-	transition: all .05s ease-in-out;
+	-o-transition: all .05s ease-in-out;
+	-moz-transition: all .05s ease-in-out;
 	-webkit-transition: all .05s ease-in-out;
-	-ms-transition:all .05s ease-in-out;}
+	-ms-transition:all .05s ease-in-out;
+	transition: all .05s ease-in-out;
 }
 
 .social-footer ul {
@@ -584,38 +683,117 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 
 .launch-spin-8 {
 	cursor: crosshair;
+	-o-animation-name: rotate8;
+	-moz-animation-name: rotate8;
+	-webkit-animation-name: rotate8;
 	animation-name: rotate8;
+	-o-animation-delay: .2s;
+	-moz-animation-delay: .2s;
+	-webkit-animation-delay: .2s;
 	animation-delay: .2s;
+	-o-animation-duration: 8s;
+	-moz-animation-duration: 8s;
+	-webkit-animation-duration: 8s;
 	animation-duration: 8s;
+	-o-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
+	-o-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
-	transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
 	-ms-transform-origin: 50% 50%;
 	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
 	animation-play-state: running;
 	-moz-animation-play-state: running;
 	-webkit-animation-play-state: running;
 }
 
+@-o-keyframes rotate8 {
+	0% {
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
 @-moz-keyframes rotate8 {
-	0% {-moz-transform: rotate(0deg);}
-	100% {-moz-transform: rotate(360deg);}	
+	0% {
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}	
 }
 
 @-webkit-keyframes rotate8 {
-	0% {-webkit-transform: rotate(0deg);}
-	100% {-webkit-transform: rotate(360deg);}
+	0% {
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
 }
+
 @keyframes rotate8 {
-	0% {transform: rotate(0deg);}
-	100% {transform: rotate(360deg);}
+	0% {
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
 }
 
 .logo-fade-in {
 	opacity: 1;
+	-o-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
-	animation-iteration-count: 1;
+	-o-animation-timing-function: ease-in-out;
+	-moz-animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
 	animation-timing-function: ease-in-out;
+	-o-animation-duration: 1.5s;
+	-moz-animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
 	animation-duration: 1.5s;
 }
 
@@ -659,9 +837,17 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 #poly-launch path, #entertainment-launch path{
 	fill: #ffffff;
 	opacity: 1;
+	-o-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
-	animation-iteration-count: 1;
+	-o-animation-timing-function: ease-in-out;
+	-moz-animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
 	animation-timing-function: ease-in-out;
+	-o-animation-duration: 6.3s;
+	-moz-animation-duration: 6.3s;
+	-webkit-animation-duration: 6.3s;
 	animation-duration: 6.3s;
 	padding: 0 .6em 0 0;
 }
