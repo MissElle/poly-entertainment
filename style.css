@@ -308,12 +308,19 @@ path {
 }
 
 /*=================================================*/
-/*animation timer*/
+/*animation fades*/
 
-@keyframes startupTimer {
+@keyframes fadeIn {
+	0%{opacity: 0;}
+	70%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes fadeInOut {
 	0% {opacity: 0;}
-	80% {opacity: 0;}
-	100% {opacity: 1;}
+	20% {opacity: 1;}
+	80% {opacity: 1;}
+	100% {opacity: 0;}
 }
 
 /*=================================================*/
@@ -323,8 +330,8 @@ path {
 	position: relative;
 	top: 7em;
 	opacity: 0;
-	animation-name: startupHello;
-	animation-duration: 5s;
+	animation-name: fadeInOut;
+	animation-duration: 4.4s;
 	animation-iteration-count: 1;
 	animation-delay: 2s;
 }
@@ -359,10 +366,10 @@ h2 {
 .timer {
 	position: relative;
 	top: -12em;
-	opacity: 1;
 	text-align: center;
-	animation-name: startupTimer;
-	animation-duration: 8.5s;
+	opacity: 1;
+	animation-name: fadeIn;
+	animation-duration: 8.8s;
 	animation-iteration-count: 1;
 }
 
@@ -406,16 +413,6 @@ h2 {
 	.timer-text {
 		font-size: 9vw;
 	}
-}
-
-/*=================================================*/
-/*animation Hello*/
-
-@keyframes startupHello {
-	0% {opacity: 0;}
-	20% {opacity: 1;}
-	80% {opacity: 1;}
-	100% {opacity: 0;}
 }
 
 /*=================================================*/
@@ -587,12 +584,6 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 
 .launch-spin-8 {
 	cursor: crosshair;
-/*
-	transform: rotate(360deg);
-	-webkit-transform: rotate(360deg);
-	-moz-transform: rotate(360deg);
-	transition: transform 3s linear infinite;
-*/
 	animation-name: rotate8;
 	animation-delay: .2s;
 	animation-duration: 8s;
@@ -620,24 +611,12 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 	100% {transform: rotate(360deg);}
 }
 
-@keyframes logoFadeIn {
-	0% {opacity: 0;}
-	70% {opacity: 0;}
-	100% {opacity: 1;}
-}
-
-@keyframes nameFadeIn {
-	0% {opacity: 0;}
-	70% {opacity: 0;}
-	100% {opacity: 1;}
-}
-
 .logo-fade-in {
 	opacity: 1;
-	animation-name: logoFadeIn;
+	animation-name: fadeIn;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in-out;
-	animation-duration: 1s;
+	animation-duration: 1.5s;
 }
 
 #launch-welcome {
@@ -680,10 +659,10 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 #poly-launch path, #entertainment-launch path{
 	fill: #ffffff;
 	opacity: 1;
-	animation-name: nameFadeIn;
+	animation-name: fadeIn;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in-out;
-	animation-duration: 7s;
+	animation-duration: 6.3s;
 	padding: 0 .6em 0 0;
 }
 
