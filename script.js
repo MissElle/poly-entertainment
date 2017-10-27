@@ -9,8 +9,8 @@ $('#hamburger').on('mousedown', menuDisplay);
 $('#float-box').on('mousedown', menuDisplay);
 $(window).on('resize', screenSizeGrows);
 $(window).on('resize', changeHTMLStyles);
-$(document).ready(changeHTMLStyles);
-$(document).ready(timer);
+$(window).on('load', changeHTMLStyles);
+$(window).on('load', timer);
 
 //=================================================//
 //This counter is to be used for the menu functions
@@ -33,7 +33,8 @@ function spinIt() {
 //This timer counts to the launch date
 
 function timer() {
-	var launchDate = new Date('2018-02-08 20:00:00 GMT -0700').getTime();
+	//GMT-0700
+	var launchDate = new Date('2018-02-09T03:00:00').getTime();
 	var countDownTime = setInterval(function() {
 		var now = new Date().getTime();
 		var distance = launchDate - now;
