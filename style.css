@@ -591,7 +591,7 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 	transform: rotate(360deg);
 	-webkit-transform: rotate(360deg);
 	-moz-transform: rotate(360deg);
-	transition: all 3s linear;
+	transition: transform 3s linear infinite;
 */
 	animation-name: rotate8;
 	animation-delay: .8s;
@@ -607,14 +607,17 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 }
 
 @-moz-keyframes rotate8 {
+	0% {-moz-transform: rotate(0deg);}
 	100% {-moz-transform: rotate(360deg);}	
 }
 
 @-webkit-keyframes rotate8 {
+	0% {-webkit-transform: rotate(0deg);}
 	100% {-webkit-transform: rotate(360deg);}
 }
 @keyframes rotate8 {
-	100% {;transform: rotate(360deg);}
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
 }
 
 @keyframes logoFadeIn {
