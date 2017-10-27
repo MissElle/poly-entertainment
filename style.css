@@ -587,6 +587,12 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 
 .launch-spin-8 {
 	cursor: crosshair;
+/*
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	transition: all 3s linear;
+*/
 	animation-name: rotate8;
 	animation-delay: .8s;
 	animation-duration: 1.6s;
@@ -601,27 +607,14 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 }
 
 @-moz-keyframes rotate8 {
-	100% {
-		opacity: 1;
-		transform: rotate(360deg);
-		-webkit-transform: rotate(360deg);
-		-moz-transform: rotate(360deg);
-	}	
+	100% {-moz-transform: rotate(360deg);}	
 }
 
 @-webkit-keyframes rotate8 {
-	100% {
-		transform: rotate(360deg);
-		-webkit-transform: rotate(360deg);
-		-moz-transform: rotate(360deg);
-	}
+	100% {-webkit-transform: rotate(360deg);}
 }
 @keyframes rotate8 {
-	100% {
-		opacity: 1;transform: rotate(360deg);
-		-webkit-transform: rotate(360deg);
-		-moz-transform: rotate(360deg);
-	}
+	100% {;transform: rotate(360deg);}
 }
 
 @keyframes logoFadeIn {
