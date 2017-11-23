@@ -1,4 +1,4 @@
-//This js code was written with Adobe Animate to create the clipping mask rotating logo
+//This code was written by Adobe Animate CC 2017 as part of canvas rendering
 
 var canvas, stage, exportRoot, anim_container, fnStartAnimation;
 
