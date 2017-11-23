@@ -1029,8 +1029,11 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 }
 
 #logo-launch {
-	height: 10em;
-	margin: 3em auto 1em auto;
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 	-o-animation-name: flicker;
 	-moz-animation-name: flicker;
 	-webkit-animation-name: flicker;
@@ -1051,6 +1054,21 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 	-moz-filter: drop-shadow(0 0 .2em #7fccff);
 	-o-filter: drop-shadow(0 0 .2em #7fccff);
 	filter: drop-shadow(0 0 .2em #7fccff);
+}
+
+#logo-launch>canvas {
+  min-height: 12em;
+  min-width: 12em;
+  height: 30vh;
+  width: 30vh;
+  display: block;
+}
+
+@media screen and (max-width: 35vh) {
+  #logo-launch>canvas{
+    height: 90vw;
+    width: 90vw;
+  }
 }
 
 #logo-launch path {
