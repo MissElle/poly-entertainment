@@ -892,100 +892,10 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 
 #launch-wrapper {
 	width: 100vw;
-	height: 98vh;
+	height: 100vh;
+	max-width: 100%;
 	max-width: 100%;
 	overflow: hidden;
-}
-
-.launch-spin-8 {
-	cursor: crosshair;
-	-o-animation-name: rotate8;
-	-moz-animation-name: rotate8;
-	-webkit-animation-name: rotate8;
-	animation-name: rotate8;
-	-o-animation-delay: .2s;
-	-moz-animation-delay: .2s;
-	-webkit-animation-delay: .2s;
-	animation-delay: .2s;
-	-o-animation-duration: 8s;
-	-moz-animation-duration: 8s;
-	-webkit-animation-duration: 8s;
-	animation-duration: 8s;
-	-o-animation-iteration-count: infinite;
-	-moz-animation-iteration-count: infinite;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-	-o-animation-timing-function: linear;
-	-moz-animation-timing-function: linear;
-	-webkit-animation-timing-function: linear;
-	animation-timing-function: linear;
-	-o-transform-origin: 50% 50%;
-	-moz-transform-origin: 50% 50%;
-	-webkit-transform-origin: 50% 50%;
-	transform-origin: 50% 50%;
-	animation-play-state: running;
-	-moz-animation-play-state: running;
-	-webkit-animation-play-state: running;
-}
-
-@-o-keyframes rotate8 {
-	0% {
-		-webkit-transform: rotate(0deg);
-		-o-transform: rotate(0deg);
-		-moz-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(360deg);
-		-o-transform: rotate(360deg);
-		-moz-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
-}
-
-@-moz-keyframes rotate8 {
-	0% {
-		-webkit-transform: rotate(0deg);
-		-o-transform: rotate(0deg);
-		-moz-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(360deg);
-		-o-transform: rotate(360deg);
-		-moz-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}	
-}
-
-@-webkit-keyframes rotate8 {
-	0% {
-		-webkit-transform: rotate(0deg);
-		-o-transform: rotate(0deg);
-		-moz-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(360deg);
-		-o-transform: rotate(360deg);
-		-moz-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
-}
-
-@keyframes rotate8 {
-	0% {
-		-webkit-transform: rotate(0deg);
-		-o-transform: rotate(0deg);
-		-moz-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(360deg);
-		-o-transform: rotate(360deg);
-		-moz-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
 }
 
 .logo-fade-in {
@@ -1029,7 +939,7 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 }
 
 #logo-launch {
-    margin: 2em;
+    margin: 1.2em;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -1062,12 +972,14 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
   height: 30vh;
   width: 30vh;
   display: block;
+  overflow: visible;
+  background: radial-gradient(#ffffff, rgba(127, 204, 255, 1) 20%, rgba(127, 204, 255, .3), transparent 70%);
 }
 
-@media screen and (max-width: 35vh) {
+@media screen and (max-width: 37.8125em) {
   #logo-launch>canvas{
-    height: 90vw;
-    width: 90vw;
+    height: 48vw;
+    width: 48vw;
   }
 }
 
