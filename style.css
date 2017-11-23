@@ -944,6 +944,7 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
     justify-content: center;
     align-content: center;
     align-items: center;
+/*
 	-o-animation-name: flicker;
 	-moz-animation-name: flicker;
 	-webkit-animation-name: flicker;
@@ -964,6 +965,7 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 	-moz-filter: drop-shadow(0 0 .2em #7fccff);
 	-o-filter: drop-shadow(0 0 .2em #7fccff);
 	filter: drop-shadow(0 0 .2em #7fccff);
+*/
 }
 
 #logo-launch>canvas {
@@ -973,7 +975,6 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
   width: 30vh;
   display: block;
   overflow: visible;
-  background: radial-gradient(#ffffff, rgba(127, 204, 255, 1) 20%, rgba(127, 204, 255, .3), transparent 70%);
 }
 
 @media screen and (max-width: 37.8125em) {
@@ -1006,6 +1007,7 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 	padding: 0 .6em 0 0;
 }
 
+/*
 .svg-container:hover #poly-launch path, .svg-container:hover #entertainment-launch path, .logo-fade-in:hover #logo-launch path{
 	fill: #7fccff;
 }
@@ -1019,6 +1021,7 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 	-webkit-filter: drop-shadow(0 0 .2em #7fccff);
 	-moz-filter: drop-shadow(0 0 .2em #7fccff);
 }
+*/
 
 @media all and (max-width: 47em){
 	#poly-launch, #entertainment-launch {
