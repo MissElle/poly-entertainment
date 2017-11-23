@@ -1,11 +1,10 @@
 //This js code was written with Adobe Animate to create the clipping mask rotating logo
 
-var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+var canvas, stage, exportRoot, anim_container, fnStartAnimation;
 
 window.onload = function() {
 	canvas = document.getElementById("canvas");
-	anim_container = document.getElementById("animation_container");
-	dom_overlay_container = document.getElementById("dom_overlay_container");
+	anim_container = document.getElementById("logo-launch");
 	var comp=AdobeAn.getComposition("A5BD806E4AA60441AE3443F1B13F40C8");
 	var lib=comp.getLibrary();
 	var loader = new createjs.LoadQueue(false);
@@ -61,8 +60,6 @@ function handleComplete(evt,comp) {
 			}			
 			canvas.width = w*pRatio*sRatio;			
 			canvas.height = h*pRatio*sRatio;
-			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
-			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
 			stage.scaleX = pRatio*sRatio;			
 			stage.scaleY = pRatio*sRatio;			
 			lastW = iw; lastH = ih; lastS = sRatio;            
