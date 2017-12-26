@@ -891,10 +891,6 @@ input, textarea {
 
 textarea {font-size: 1em;}
 
-<<<<<<< HEAD
-=======
-button {font-size: 1.5em;}
->>>>>>> da9bf74e09b9283e987dcf3f1da140fa3cd7c337
 /*
 font-family: 'Quicksand', sans-serif; **general font**
 font-family: 'Share Tech', sans-serif; **timer font**
@@ -905,6 +901,15 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 
 #launch-scanlines {
 	top: 0;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	background-image: url(images/scanlines.png);
+	background-repeat: repeat;
+	background-size: .15em;
+	opacity: .12;
+	z-index: 2;
+	pointer-events: none;
 }
 
 #launch-wrapper {
