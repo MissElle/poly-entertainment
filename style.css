@@ -816,7 +816,7 @@ textarea {
 }
 
 textarea::-webkit-scrollbar {
-	display: none;
+	display: auto;
 }
 
 button#submit {
@@ -850,11 +850,8 @@ button#submit:active {
 	footer section {width: 100%;}
 	input{width: 60%;}
 	textarea{width: 72%; max-width: 72%;}
-<<<<<<< HEAD
-		button#submit {margin: 1em 55%;}
-=======
-		button {margin: 1em 55%;}
->>>>>>> da9bf74e09b9283e987dcf3f1da140fa3cd7c337
+
+	button#submit {margin: 1em 55%;}
 }
 
 @media all and (max-width: 22.1em){
