@@ -815,6 +815,7 @@ textarea {
 	box-shadow: inset .01em .01em .1em #9a9a9a;
 }
 
+<<<<<<< HEAD
 textarea::-webkit-scrollbar {
 	display: none;
 }
@@ -839,6 +840,22 @@ button#submit:hover {
 }
 
 button#submit:active {
+=======
+button {
+	margin: 1em 80%;
+	border-radius: .2em;
+	background:linear-gradient(#ffffff, #e2e2e2);
+	color: #141414;
+	border-color: #9a9a9a;
+	border-style: solid;
+	border-width: .07em .05em .12em .12em;
+	box-shadow: inset .01em .01em .1em #9a9a9a;
+	cursor: pointer;
+}
+
+button:active {
+	border-width: .12em .12em .07em .05em;
+>>>>>>> da9bf74e09b9283e987dcf3f1da140fa3cd7c337
 	color: #7fccff;
 }
 
@@ -850,7 +867,11 @@ button#submit:active {
 	footer section {width: 100%;}
 	input{width: 60%;}
 	textarea{width: 72%; max-width: 72%;}
+<<<<<<< HEAD
 		button#submit {margin: 1em 55%;}
+=======
+		button {margin: 1em 55%;}
+>>>>>>> da9bf74e09b9283e987dcf3f1da140fa3cd7c337
 }
 
 @media all and (max-width: 22.1em){
@@ -887,6 +908,10 @@ input, textarea {
 
 textarea {font-size: 1em;}
 
+<<<<<<< HEAD
+=======
+button {font-size: 1.5em;}
+>>>>>>> da9bf74e09b9283e987dcf3f1da140fa3cd7c337
 /*
 font-family: 'Quicksand', sans-serif; **general font**
 font-family: 'Share Tech', sans-serif; **timer font**
