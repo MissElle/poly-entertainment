@@ -80,7 +80,7 @@ function changeHTMLStyles() {
 		var bgColor = $(this).css('background-color');
 		if( bgColor === 'rgb(252, 252, 252)') {
 			$('.fa').css('color', '#461ca4');
-		}else if(bgColor === 'rgb(54, 33, 102)')	{
+		}else if(bgColor === 'rgb(70, 28, 164)')	{
 			$('.fa').css('color', '#ffffff');	
 		}
 	});
