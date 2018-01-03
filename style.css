@@ -731,6 +731,47 @@ h2 {
 }
 
 /*=================================================*/
+/*stylings for the rotating carousel contents*/
+
+div.carousel {
+	/* display: flex; */
+	/* flex-flow: row nowrap; */
+	height: auto;
+	min-height: 15em;
+}
+
+.shelved {background-color: #ff7070;
+	/* perspective: 100px; */
+	/* -webkit-perspective: 100px; */
+	/* perspective-origin: 50% 50%; */
+	/* -webkit-perspective-origin: 50% 50%; */
+	/* transform: rotateY(45deg); */
+	/* -webkit-transform: rotateY(45deg); */
+	/* transform: translate3d(10em, 10em, 10em); */
+	/* -webkit-transform: translate3d(10em, 10em, 10em); */
+}
+
+.shelved>img {
+	display: inline-block;
+	/* -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(60deg); */
+	/* transform: rotateX(0deg) rotateY(0deg) rotateZ(60deg); */
+	/* perspective: 100px; */
+	/* -webkit-perspective: 100px; */
+	/* perspective-origin: 50% 50%; */
+	/* -webkit-perspective-origin: 50% 50%; */
+	/* transform: translate3d(10em, 10em, 10em); */
+	/* -webkit-transform: translate3d(10em, 10em, 10em); */
+}
+
+div.carousel>.rotating-content>img{
+	display: block;
+	position: absolute;
+	width: 15em;
+	max-width: 80%;
+	padding: 1em;
+}
+
+/*=================================================*/
 /*stylings for the footer contents*/
 
 footer p {text-align: left;}
