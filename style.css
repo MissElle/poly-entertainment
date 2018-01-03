@@ -20,7 +20,7 @@ body {
 
 .wrapper {
 	width: 100%;
-	max-width: 51em;
+	/* max-width: 51em; */
 	margin: 0 auto; 
 }
 
