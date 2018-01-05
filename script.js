@@ -188,14 +188,31 @@ function runCarousel() {
 	// var objArr = new Array();
 	
 	$('.carousel').each( function(){
+		
 		var eachItem = $(this).find('.rotating-content').map(function(){
 			return (this.id);
 		}).get();
 		objArr.push(eachItem);
 	});
+	for(var i=0; i<objArr.length; ++i){
+		var percentValue = (85/objArr[i].length);
+		var pos = 0;
+		var zNum = 1000;
+		for(var k=0; k<objArr[i].length; ++k){
+			$('#' + objArr[i][k]).css({
+				'left' : pos +'%',
+				'z-index' : zNum});
+			pos += percentValue;
+			zNum -= 1;
+			
+			console.log(pos);
+			//code will go here that maps out what happens if a value is above or below 50% in an if/else statement.... that way there will always be a highlighted middle in the carousel.
+		}
+	}
 	console.log(objArr);
+	
 }
-
+	
 //=================================================//
 //This is leftover code, it will do a collapsing effect for items of the same class
 //		var thisLength = 25;
