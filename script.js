@@ -18,7 +18,7 @@ $(window).on('load', runCarousel);
 //global object is for runCarousel()
 
 var count = 0;
-var rotatingObjs = [];
+var objArr = [];
 
 //=================================================//
 //This allows users to pause the spinner if desired
@@ -173,15 +173,27 @@ $$("#examples article").forEach(function (article, i) {
 //=================================================//
 //This function will find all divs with the class 'carousel', filter them by id's, pop the child elements into an array, and 
 
-function runCarousel() {
-	$('.carousel').each( function(){
-		var objArr = [];
-		$('.rotating-content').each(function(){
-			objArr.push(this.id);
-		});
-		console.log(objArr);
-	});
+// function runCarousel() {
+	// var objArr = new Array();
+	// $('.carousel').each( function(){
+		// $('.rotating-content').each(function(){
+			// objArr.push(this.id);
+		// });
+		// console.log(objArr);
+	// });
 	
+// }
+
+function runCarousel() {
+	// var objArr = new Array();
+	
+	$('.carousel').each( function(){
+		var eachItem = $(this).find('.rotating-content').map(function(){
+			return (this.id);
+		}).get();
+		objArr.push(eachItem);
+	});
+	console.log(objArr);
 }
 
 //=================================================//
