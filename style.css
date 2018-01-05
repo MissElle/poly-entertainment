@@ -744,9 +744,18 @@ div.carousel {
 	width: 15em;
 	max-width: 80%;
 	padding: 1em;
+	perspective: 37.5em;
+	-webkit-perspective: 37.5em;
+	-moz-perspective: 37.5em;
+	-o-perspective: 37.5em;
 }
 
 .shelved>img {
+	transform: rotate3d(0, 1, 0, -55deg);
+}
+
+div.carousel>.rotating-content {
+	position: absolute;
 }
 
 div.carousel>.rotating-content>img{
