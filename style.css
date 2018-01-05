@@ -741,34 +741,18 @@ div.carousel {
 }
 
 .shelved {background-color: #ff7070;
-	/* perspective: 100px; */
-	/* -webkit-perspective: 100px; */
-	/* perspective-origin: 50% 50%; */
-	/* -webkit-perspective-origin: 50% 50%; */
-	/* transform: rotateY(45deg); */
-	/* -webkit-transform: rotateY(45deg); */
-	/* transform: translate3d(10em, 10em, 10em); */
-	/* -webkit-transform: translate3d(10em, 10em, 10em); */
+	width: 15em;
+	max-width: 80%;
+	padding: 1em;
 }
 
 .shelved>img {
-	display: inline-block;
-	/* -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(60deg); */
-	/* transform: rotateX(0deg) rotateY(0deg) rotateZ(60deg); */
-	/* perspective: 100px; */
-	/* -webkit-perspective: 100px; */
-	/* perspective-origin: 50% 50%; */
-	/* -webkit-perspective-origin: 50% 50%; */
-	/* transform: translate3d(10em, 10em, 10em); */
-	/* -webkit-transform: translate3d(10em, 10em, 10em); */
 }
 
 div.carousel>.rotating-content>img{
 	display: block;
-	position: absolute;
-	width: 15em;
-	max-width: 80%;
-	padding: 1em;
+	/* position: absolute; */
+	width: 100%;
 }
 
 /*=================================================*/
