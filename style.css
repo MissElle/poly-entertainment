@@ -738,17 +738,21 @@ div.carousel {
 	/* flex-flow: row nowrap; */
 	height: auto;
 	min-height: 15em;
+	margin: 2em 0;
 }
 
 .shelved {
 	/* background-color: #ff7070; */
 	width: 15em;
-	max-width: 80%;
 	padding: 1em;
-	perspective: 37.5em;
-	-webkit-perspective: 37.5em;
-	-moz-perspective: 37.5em;
-	-o-perspective: 37.5em;
+	perspective: 20em;
+	-webkit-perspective: 20em;
+	-moz-perspective: 20em;
+	-o-perspective: 20em;
+	perspective-origin: 50% 65%;
+	-moz-perspective-origin: 50% 65%;
+	-o-perspective-origin: 50% 65%;
+	-webkit-perspective-origin: 50% 65%;
 }
 
 .shelved>img {
