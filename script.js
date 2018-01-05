@@ -11,10 +11,14 @@ $(window).on('resize', screenSizeGrows);
 $(window).on('resize', changeHTMLStyles);
 $(window).on('load', changeHTMLStyles);
 $(window).on('load', timer);
+$(window).on('load', runCarousel);
 
 //=================================================//
 //This counter is to be used for the menu functions
+//global object is for runCarousel()
+
 var count = 0;
+var rotatingObjs = [];
 
 //=================================================//
 //This allows users to pause the spinner if desired
@@ -165,6 +169,20 @@ $$("#examples article").forEach(function (article, i) {
 
     article.appendChild(textarea);
 });
+
+//=================================================//
+//This function will find all divs with the class 'carousel', filter them by id's, pop the child elements into an array, and 
+
+function runCarousel() {
+	$('.carousel').each( function(){
+		var objArr = [];
+		$('.rotating-content').each(function(){
+			objArr.push(this.id);
+		});
+		console.log(objArr);
+	});
+	
+}
 
 //=================================================//
 //This is leftover code, it will do a collapsing effect for items of the same class
