@@ -785,6 +785,12 @@ div.carousel>.rotating-content>img{
 
 .slide-left {left: 0;} .slide-right {right: 0;}
 
+.slide-left>i, .slide-right>i{
+	width: auto;
+	height: auto;
+	border-radius: 50em;
+}
+
 /*=================================================*/
 /*stylings for the footer contents*/
 
