@@ -80,12 +80,25 @@ function timer() {
 
 function changeHTMLStyles() {
 	//This changes the icon styles depending on what color the footer tag is (.content even stylings)
+	//Also will change the left/right icons in the carousels
 	$('.content').each(function(){
 		var bgColor = $(this).css('background-color');
 		if( bgColor === 'rgb(252, 252, 252)') {
 			$('.fa').css('color', '#461ca4');
+			$('.fa-chevron-circle-left').css({
+				'background-color' : 'rgb(255, 255, 255)',
+				'color' : 'rgb(70, 28, 164)'});
+			$('.fa-chevron-circle-right').css({
+				'background-color' : 'rgb(255, 255, 255)',
+				'color' : 'rgb(70, 28, 164)'});
 		}else if(bgColor === 'rgb(70, 28, 164)')	{
-			$('.fa').css('color', '#ffffff');	
+			$('.fa').css('color', '#ffffff');
+			$('.fa-chevron-circle-left').css({
+				'background-color' : 'rgb(70, 28, 164)',
+				'color' : 'rgb(255, 255, 255)'});
+			$('.fa-chevron-circle-right').css({
+				'background-color' : 'rgb(70, 28, 164)',
+				'color' : 'rgb(255, 255, 255)'});				
 		}
 	});
 	
@@ -195,8 +208,8 @@ function runCarousel() {
 		objArr.push(eachItem);
 	});
 	for(var i=0; i<objArr.length; ++i){
-		var percentValue = (85/objArr[i].length);
-		var pos = 0;
+		var percentValue = (100/objArr[i].length);
+		var pos = -5;
 		var zNum = 1000;
 		for(var k=0; k<objArr[i].length; ++k){
 			$('#' + objArr[i][k]).css({
