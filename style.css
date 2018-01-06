@@ -217,6 +217,7 @@ nav ul {
 	color: white;
 	text-align: justify;
 	z-index: 100;
+	display: block;
 }
 
 .content:nth-child(even) {
@@ -738,7 +739,7 @@ div.carousel {
 	/* flex-flow: row nowrap; */
 	height: auto;
 	min-height: 15em;
-	margin: 2em 0;
+	margin: 3em 0;
 }
 
 .shelved {
@@ -757,6 +758,7 @@ div.carousel {
 
 .shelved>img {
 	transform: rotate3d(0, 1, 0, -55deg);
+	
 }
 
 div.carousel>.rotating-content {
@@ -768,6 +770,20 @@ div.carousel>.rotating-content>img{
 	/* position: absolute; */
 	width: 100%;
 }
+/*=================================================*/
+/*stylings for the rotating carousel arrows*/
+
+.slide-left, .slide-right {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center; 
+	position: absolute;
+	height: 21em; 
+	width: auto;
+	z-index: 10000;
+}
+
+.slide-left {left: 0;} .slide-right {right: 0;}
 
 /*=================================================*/
 /*stylings for the footer contents*/
