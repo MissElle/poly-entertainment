@@ -83,27 +83,28 @@ function changeHTMLStyles() {
 	//Also will change the left/right icons in the carousels
 	$('.content').each(function(){
 		var bgColor = $(this).css('background-color');
-		if( bgColor === 'rgb(252, 252, 252)') {
-			$('.fa').css('color', '#461ca4');
-			$('.fa-chevron-circle-left').css({
+		if( bgColor === 'rgb(252, 252, 252)' ){
+			$(this).find('.fa').css('color', '#461ca4');
+			$(this).find('.fa-chevron-circle-left').css({
 				'background-color' : 'rgb(255, 255, 255)',
 				'color' : 'rgb(70, 28, 164)'});
-			$('.fa-chevron-circle-right').css({
+			$(this).find('.fa-chevron-circle-right').css({
 				'background-color' : 'rgb(255, 255, 255)',
 				'color' : 'rgb(70, 28, 164)'});
-			$('.slide-left').css('background' , 'linear-gradient(to right, #461ca4 60%, transparent)');
-			$('.slide-right').css('background' , 'linear-gradient(to left, #461ca4 60%, transparent)');
-		}else if(bgColor === 'rgb(70, 28, 164)')	{
-			$('.fa').css('color', '#ffffff');
-			$('.fa-chevron-circle-left').css({
+			$(this).find('.slide-left').css('background' , 'linear-gradient(to right, #fcfcfc 60%, transparent)');
+			$(this).find('.slide-right').css('background' , 'linear-gradient(to left, #fcfcfc 60%, transparent)');
+		}else if( bgColor === 'rgb(70, 28, 164)' ){
+			$(this).find('.fa').css('color', '#ffffff');
+			$(this).find('.fa-chevron-circle-left').css({
 				'background-color' : 'rgb(70, 28, 164)',
 				'color' : 'rgb(255, 255, 255)'});
-			$('.fa-chevron-circle-right').css({
+			$(this).find('.fa-chevron-circle-right').css({
 				'background-color' : 'rgb(70, 28, 164)',
 				'color' : 'rgb(255, 255, 255)'});
-			$('.slide-left').css('background' , 'linear-gradient(to right, #fcfcfc 60%, transparent)');
-			$('.slide-right').css('background' , 'linear-gradient(to left, #fcfcfc 60%, transparent)');				
+			$(this).find('.slide-left').css('background' , 'linear-gradient(to right, #461ca4 60%, transparent)');
+			$(this).find('.slide-right').css('background' , 'linear-gradient(to left, #461ca4 60%, transparent)');				
 		}
+		console.log(bgColor);
 	});
 	
 	$('#menu .fa-github').css('color', '#1e1e1e');
