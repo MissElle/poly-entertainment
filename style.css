@@ -197,7 +197,7 @@ nav ul {
 	background-repeat: repeat;
 	background-size: .15em;
 	opacity: .12;
-	z-index: 2;
+	z-index: 20000;
 	pointer-events: none;
 }
 
@@ -770,6 +770,7 @@ div.carousel>.rotating-content>img{
 	/* position: absolute; */
 	width: 100%;
 }
+
 /*=================================================*/
 /*stylings for the rotating carousel arrows*/
 
@@ -778,18 +779,27 @@ div.carousel>.rotating-content>img{
 	flex-flow: row nowrap;
 	align-items: center; 
 	position: absolute;
+	padding: 0 .4em;
 	height: 21em; 
-	width: auto;
+	width: 4em;
 	z-index: 10000;
 }
 
-.slide-left {left: 0;} .slide-right {right: 0;}
+.slide-left {left: 0; justify-content: flex-start;} 
+.slide-right {right: 0; justify-content: flex-end;}
 
 .slide-left>i, .slide-right>i{
-	width: auto;
-	height: auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: .7em;
+	height: .7em;
+	font-size: 2.8em;
 	border-radius: 50em;
 }
+
 
 /*=================================================*/
 /*stylings for the footer contents*/
