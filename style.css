@@ -800,8 +800,8 @@ div.carousel>.rotating-content>img{
 	height: .7em;
 	font-size: 2.8em;
 	border-radius: 50em;
+	cursor: pointer;
 }
-
 
 /*=================================================*/
 /*stylings for the footer contents*/
