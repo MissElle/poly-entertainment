@@ -91,6 +91,8 @@ function changeHTMLStyles() {
 			$('.fa-chevron-circle-right').css({
 				'background-color' : 'rgb(255, 255, 255)',
 				'color' : 'rgb(70, 28, 164)'});
+			$('.slide-left').css('background' , 'linear-gradient(to right, #461ca4 60%, transparent)');
+			$('.slide-right').css('background' , 'linear-gradient(to left, #461ca4 60%, transparent)');
 		}else if(bgColor === 'rgb(70, 28, 164)')	{
 			$('.fa').css('color', '#ffffff');
 			$('.fa-chevron-circle-left').css({
@@ -98,7 +100,9 @@ function changeHTMLStyles() {
 				'color' : 'rgb(255, 255, 255)'});
 			$('.fa-chevron-circle-right').css({
 				'background-color' : 'rgb(70, 28, 164)',
-				'color' : 'rgb(255, 255, 255)'});				
+				'color' : 'rgb(255, 255, 255)'});
+			$('.slide-left').css('background' , 'linear-gradient(to right, #fcfcfc 60%, transparent)');
+			$('.slide-right').css('background' , 'linear-gradient(to left, #fcfcfc 60%, transparent)');				
 		}
 	});
 	
