@@ -12,13 +12,17 @@ $(window).on('resize', changeHTMLStyles);
 $(window).on('load', changeHTMLStyles);
 $(window).on('load', timer);
 $(window).on('load', runCarousel);
+$('.slide-left').on('click', slideContentLeft);
+$('.slide-right').on('click', slideContentRight);
 
 //=================================================//
 //This counter is to be used for the menu functions
 //global object is for runCarousel()
 
 var count = 0;
-var objArr = [];
+//the following two arrays hold the parent ids for the carousel and the child elements ids in the carousels. These are generated in the function runCarousel()
+var parentIDs = [];
+var childIDs = [];
 
 //=================================================//
 //This allows users to pause the spinner if desired
@@ -192,32 +196,32 @@ $$("#examples article").forEach(function (article, i) {
 //This function will find all divs with the class 'carousel', filter them by id's, pop the child elements into an array, and 
 
 // function runCarousel() {
-	// var objArr = new Array();
+	// var childIDs = new Array();
 	// $('.carousel').each( function(){
 		// $('.rotating-content').each(function(){
-			// objArr.push(this.id);
+			// childIDs.push(this.id);
 		// });
-		// console.log(objArr);
+		// console.log(childIDs);
 	// });
 	
 // }
 
 function runCarousel() {
-	// var objArr = new Array();
+	// var childIDs = new Array();
 	
 	$('.carousel').each( function(){
-		
+		parentIDs.push(this.id);
 		var eachItem = $(this).find('.rotating-content').map(function(){
 			return (this.id);
 		}).get();
-		objArr.push(eachItem);
+		childIDs.push(eachItem);
 	});
-	for(var i=0; i<objArr.length; ++i){
-		var percentValue = (100/objArr[i].length);
+	for(var i=0; i<childIDs.length; ++i){
+		var percentValue = (100/childIDs[i].length);
 		var pos = -5;
-		var zNum = 1000;
-		for(var k=0; k<objArr[i].length; ++k){
-			$('#' + objArr[i][k]).css({
+		var zNum = 2000;
+		for(var k=0; k<childIDs[i].length; ++k){
+			$('#' + childIDs[i][k]).css({
 				'left' : pos +'%',
 				'z-index' : zNum});
 			pos += percentValue;
@@ -227,8 +231,22 @@ function runCarousel() {
 			//code will go here that maps out what happens if a value is above or below 50% in an if/else statement.... that way there will always be a highlighted middle in the carousel.
 		}
 	}
-	console.log(objArr);
+	console.log(childIDs);
+	console.log(parentIDs);
+}
 	
+//=================================================//
+//function slides elements left in the carousels
+
+function slideContentLeft() {
+
+}	
+
+//=================================================//
+//function slides elements right in the carousels
+	
+function slideContentRight() {
+
 }
 	
 //=================================================//
