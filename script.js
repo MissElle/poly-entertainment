@@ -12,8 +12,8 @@ $(window).on('resize', changeHTMLStyles);
 $(window).on('load', changeHTMLStyles);
 $(window).on('load', timer);
 $(window).on('load', runCarousel);
-$('.slide-left').on('click', slideContentLeft);
-$('.slide-right').on('click', slideContentRight);
+	//After content ids are matched from the left and right arrow icons they are then sent to function slideContent()
+$('*[class^="slide"').on('click', verifyContent);
 
 //=================================================//
 //This counter is to be used for the menu functions
@@ -108,7 +108,6 @@ function changeHTMLStyles() {
 			$(this).find('.slide-left').css('background' , 'linear-gradient(to right, #461ca4 60%, transparent)');
 			$(this).find('.slide-right').css('background' , 'linear-gradient(to left, #461ca4 60%, transparent)');				
 		}
-		console.log(bgColor);
 	});
 	
 	$('#menu .fa-github').css('color', '#1e1e1e');
@@ -218,7 +217,7 @@ function runCarousel() {
 	});
 	for(var i=0; i<childIDs.length; ++i){
 		var percentValue = (100/childIDs[i].length);
-		var pos = -5;
+		var pos = 0;
 		var zNum = 2000;
 		for(var k=0; k<childIDs[i].length; ++k){
 			$('#' + childIDs[i][k]).css({
@@ -227,26 +226,49 @@ function runCarousel() {
 			pos += percentValue;
 			zNum -= 1;
 			
-			console.log(pos);
+			// console.log(pos);
 			//code will go here that maps out what happens if a value is above or below 50% in an if/else statement.... that way there will always be a highlighted middle in the carousel.
 		}
 	}
-	console.log(childIDs);
-	console.log(parentIDs);
+	// console.log(childIDs);
+	// console.log(parentIDs);
 }
 	
 //=================================================//
-//function slides elements left in the carousels
+//function verifies that the content name matches in array value and sends the sets of information to slideContent()
 
-function slideContentLeft() {
-
+function verifyContent() {
+	for(var i=0; i<parentIDs.length; i++){
+		var matchVal = JSON.stringify($(this).attr('data-name'));
+		var regexVal = new RegExp(matchVal);
+		var parentName = JSON.stringify(parentIDs[i]);
+		if(regexVal.test(parentName)){
+			slideContent(i, $(this).attr('class'));
+			// console.log(parentName + ' is a match');
+		}else {
+		   // console.log(parentName + ' is NOT a match');
+		}
+	}
+	// console.log(matchVal);
+	// console.log(regexVal);
 }	
 
 //=================================================//
-//function slides elements right in the carousels
+//function slides elements left and right in the carousels
 	
-function slideContentRight() {
-
+function slideContent(arr, dir) {
+	// dir = JSON.stringify(dir);
+	// for(var i=0; i<childIDs[arr][i]; ++i){
+		if(dir == 'slide-left'){
+			console.log('we are moving the content left');
+		}else if(dir =='slide-right'){
+			console.log('we are moving the content right');
+		}else{
+			alert('You have a terrible, code-breaking error!');
+		}
+	// }
+	// console.log(childIDs[arr]);
+	// console.log(dir);
 }
 	
 //=================================================//
