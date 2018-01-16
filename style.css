@@ -1108,7 +1108,6 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 	padding: 0 .6em 0 0;
 }
 
-/*
 .svg-container:hover #poly-launch path, .svg-container:hover #entertainment-launch path, .logo-fade-in:hover #logo-launch path{
 	fill: #7fccff;
 }
@@ -1122,7 +1121,6 @@ font-family: 'Montserrat Alternates', sans-serif; **Heading Font***/
 	-webkit-filter: drop-shadow(0 0 .2em #7fccff);
 	-moz-filter: drop-shadow(0 0 .2em #7fccff);
 }
-*/
 
 @media all and (max-width: 47em){
 	#poly-launch, #entertainment-launch {
