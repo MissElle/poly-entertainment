@@ -244,9 +244,9 @@ function verifyContent() {
 		var parentName = JSON.stringify(parentIDs[i]);
 		if(regexVal.test(parentName)){
 			slideContent(i, $(this).attr('class'));
-			// console.log(parentName + ' is a match');
+			 console.log(parentName + ' is a match');
 		}else {
-		   // console.log(parentName + ' is NOT a match');
+		    console.log(parentName + ' is NOT a match');
 		}
 	}
 	// console.log(matchVal);
@@ -259,16 +259,25 @@ function verifyContent() {
 function slideContent(arr, dir) {
 	// dir = JSON.stringify(dir);
 	// for(var i=0; i<childIDs[arr][i]; ++i){
+    var x = childIDs[arr].length - 1;
+    var firstEl = childIDs[arr][0];
+    var lastEl = childIDs[arr][x];
 		if(dir == 'slide-left'){
 			console.log('we are moving the content left');
+          childIDs[arr].pop();
+          childIDs[arr].unshift(lastEl);
 		}else if(dir =='slide-right'){
 			console.log('we are moving the content right');
+          childIDs[arr].shift();
+          childIDs[arr].push(firstEl);
+          
 		}else{
 			alert('You have a terrible, code-breaking error!');
 		}
 	// }
-	// console.log(childIDs[arr]);
-	// console.log(dir);
+     console.log(x);
+	 console.log(childIDs[arr]);
+	 console.log(dir);
 }
 	
 //=================================================//
