@@ -12,7 +12,7 @@ $(window).on('resize', changeHTMLStyles);
 $(window).on('load', changeHTMLStyles);
 $(window).on('load', timer);
 $(window).on('load', runCarousel);
-	//After content ids are matched from the left and right arrow icons they are then sent to function slideContent()
+	//After content ids are matched from the left and right arrow icons they are then sent to function changeContentClass()
 $('*[class^="slide"').on('click', verifyContent);
 
 //=================================================//
@@ -235,7 +235,7 @@ function runCarousel() {
 }
 	
 //=================================================//
-//function verifies that the content name matches in array value and sends the sets of information to slideContent()
+//function verifies that the content name matches in array value and sends the sets of information to changeContentClass()
 
 function verifyContent() {
 	for(var i=0; i<parentIDs.length; i++){
@@ -243,7 +243,7 @@ function verifyContent() {
 		var regexVal = new RegExp(matchVal);
 		var parentName = JSON.stringify(parentIDs[i]);
 		if(regexVal.test(parentName)){
-			slideContent(i, $(this).attr('class'));
+			changeContentClass(i, $(this).attr('class'));
 			 console.log(parentName + ' is a match');
 		}else {
 		    console.log(parentName + ' is NOT a match');
@@ -254,32 +254,51 @@ function verifyContent() {
 }	
 
 //=================================================//
-//function slides elements left and right in the carousels
+//function changes arr positions and changes classes.
 	
-function slideContent(arr, dir) {
-	// dir = JSON.stringify(dir);
-	// for(var i=0; i<childIDs[arr][i]; ++i){
+function changeContentClass(arr, dir) {
+
     var x = childIDs[arr].length - 1;
     var firstEl = childIDs[arr][0];
     var lastEl = childIDs[arr][x];
+  
+    var percentValue = (100/childIDs[arr].length);
+    var pos = 0;
+    var zNum = 2000;
+  
 		if(dir == 'slide-left'){
           childIDs[arr].shift();
           childIDs[arr].push(firstEl);
-			console.log('we are moving the content left');
+          slideContent(arr);
+//			console.log('we are moving the content left');
 		}else if(dir =='slide-right'){
-			console.log('we are moving the content right');
+//			console.log('we are moving the content right');
           childIDs[arr].pop();
           childIDs[arr].unshift(lastEl);
-          
+          slideContent(arr);
 		}else{
 			alert('You have a terrible, code-breaking error!');
 		}
-	// }
-     console.log(x);
 	 console.log(childIDs[arr]);
-	 console.log(dir);
 }
-	
+
+
+//=================================================//
+//function slides elements left and right in the carousels
+
+function slideContent(arr) {
+		var percentValue = (100/childIDs[arr].length);
+		var pos = 0;
+		var zNum = 2000;
+		for(var i=0; i<childIDs[arr].length; ++i){
+			$('#' + childIDs[arr][i]).css({
+				'left' : pos +'%',
+				'z-index' : zNum});
+			pos += percentValue;
+			zNum -= 1;
+        }
+}
+
 //=================================================//
 //This is leftover code, it will do a collapsing effect for items of the same class
 //		var thisLength = 25;
