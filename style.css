@@ -219,7 +219,7 @@ nav ul {
 	text-align: justify;
 	z-index: 100;
 	display: block;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .content:nth-child(even) {
