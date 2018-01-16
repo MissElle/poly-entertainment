@@ -263,13 +263,13 @@ function slideContent(arr, dir) {
     var firstEl = childIDs[arr][0];
     var lastEl = childIDs[arr][x];
 		if(dir == 'slide-left'){
-			console.log('we are moving the content left');
-          childIDs[arr].pop();
-          childIDs[arr].unshift(lastEl);
-		}else if(dir =='slide-right'){
-			console.log('we are moving the content right');
           childIDs[arr].shift();
           childIDs[arr].push(firstEl);
+			console.log('we are moving the content left');
+		}else if(dir =='slide-right'){
+			console.log('we are moving the content right');
+          childIDs[arr].pop();
+          childIDs[arr].unshift(lastEl);
           
 		}else{
 			alert('You have a terrible, code-breaking error!');
