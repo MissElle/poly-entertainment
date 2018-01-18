@@ -267,15 +267,19 @@ function changeContentClass(arr, dir) {
     var zNum = 2000;
   
 		if(dir == 'slide-left'){
+          $('#' + childIDs[arr][0]).addClass('unshelved');
+          $('#' + childIDs[arr][x]).removeClass('unshelved');
           childIDs[arr].shift();
           childIDs[arr].push(firstEl);
-          slideContent(arr);
+          slideContent(arr, dir);
 //			console.log('we are moving the content left');
 		}else if(dir =='slide-right'){
 //			console.log('we are moving the content right');
+          $('#' + childIDs[arr][x]).addClass('unshelved');
+          $('#' + childIDs[arr][0]).removeClass('unshelved');
           childIDs[arr].pop();
           childIDs[arr].unshift(lastEl);
-          slideContent(arr);
+          slideContent(arr, dir);
 		}else{
 			alert('You have a terrible, code-breaking error!');
 		}
@@ -286,10 +290,11 @@ function changeContentClass(arr, dir) {
 //=================================================//
 //function slides elements left and right in the carousels
 
-function slideContent(arr) {
-		var percentValue = (100/childIDs[arr].length);
+function slideContent(arr, dir) {
+        var percentValue = (100/childIDs[arr].length);
 		var pos = 0;
 		var zNum = 2000;
+  
 		for(var i=0; i<childIDs[arr].length; ++i){
 			$('#' + childIDs[arr][i]).css({
 				'left' : pos +'%',
