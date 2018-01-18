@@ -769,21 +769,61 @@ div.carousel {
 
 .shelved>img {
 	transform: rotate3d(0, 1, 0, -55deg);
-	
+	-webkit-transform: rotate3d(0, 1, 0, -55deg);
+	-moz-transform: rotate3d(0, 1, 0, -55deg);
+	-o-transform: rotate3d(0, 1, 0, -55deg);
+}
+
+.unshelved {
+  -o-animation: .5s ease-in-out shrinkyDink;
+  -moz-animation: .5s ease-in-out shrinkyDink;
+  -webkit-animation: .5s ease-in-out shrinkyDink;
+  animation: .5s ease-in-out shrinkyDink;
 }
 
 div.carousel>.rotating-content {
+/*    display: inline-block;*/
 	position: absolute;
-    transition: left .2s ease-in-out;
-    -o-transition: left .2s ease-in-out;
-    -moz-transition: left .2s ease-in-out;
-    -webkit-transition: left .2s ease-in-out;
+    transition: left .5s ease-in-out, opacity .1s ease-in-out;
+    -o-transition: left .5s ease-in-out, opacity .1s ease-in-out;
+    -moz-transition: left .5s ease-in-out, opacity .1s ease-in-out;
+    -webkit-transition: left .5s ease-in-out, opacity .1s ease-in-out;
 }
 
 div.carousel>.rotating-content>img{
 	display: block;
-	/* position: absolute; */
 	width: 100%;
+}
+
+/*=================================================*/
+/*animations for the shrinking carousel content and expanding carousel content*/
+
+@keyframes shrinkyDink {
+  0%{transform: scale(1); opacity: 1;}
+  20%{transform: scale(0); opacity: 0;}
+  70%{transform: scale(0); opacity: 0;}
+  100%{transform: scale(1); opacity: 1;}
+}
+
+@-webkit-keyframes shrinkyDink {
+  0%{-webkit-transform: scale(1)); opacity: 1;}
+  20%{-webkit-transform: scale(0); opacity: 0;}
+  70%{-webkit-transform: scale(0); opacity: 0;}
+  100%{-webkit-transform: scale(1); opacity: 1;}
+}
+
+@-o-keyframes shrinkyDink {
+  0%{-o-transform: scale(1); opacity: 1;}
+  20%{-o-transform: scale(0); opacity: 0;}
+  70%{-o-transform: scale(0); opacity: 0;}
+  100%{-o-transform: scale(1); opacity: 1;}
+}
+
+@-moz-keyframes shrinkyDink {
+  0%{-moz-transform: scale(1); opacity: 1;}
+  20%{-moz-transform: scale(0); opacity: 0;}
+  70%{-moz-transform: scale(0); opacity: 0;}
+  100%{-moz-transform: scale(1); opacity: 1;}
 }
 
 /*=================================================*/
